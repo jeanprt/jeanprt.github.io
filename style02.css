@@ -1,0 +1,63 @@
+body {
+  background-color: lightgray;
+}
+
+.titre {
+  text-align: center;
+  margin : 50px;
+  font-family : Impact, sans-Serif;
+  font-size : 3em;
+}
+
+.titre2 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-family : Impact, sans-Serif;
+  font-size : 2em;
+}
+
+.texte {
+  text-align: justify;
+  margin : 50px;
+  padding : 20px;
+  color : gray;
+  font-family: "Philosopher", Sans-Serif;
+  background-color: beige;
+}
+
+.liste {
+  text-align: justify;
+  margin-top : 50px;
+  margin-left: 400px;
+  margin-right: 400px;
+  margin-bottom: 50px;
+  padding : 20px;
+  color : gray;
+  font-family: "Philosopher", Sans-Serif;
+  background-color: beige;
+}
+
+.illustrations {
+  margin : 50px;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image {
+  margin : 10px;
+  padding : 30px;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  
+}
+
+a:hover {
+  color : black;
+}
+
+a {
+  color : darkgray;
+}
