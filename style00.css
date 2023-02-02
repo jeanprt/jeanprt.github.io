@@ -1,0 +1,56 @@
+body {
+    background-color: white;
+    padding: 0;
+    margin: 0;
+}
+
+/*Style conteneur principal*/
+.conteneur {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 260px;
+}
+
+.section0 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding : 50px;
+    
+    background-color: aliceblue;
+}
+
+/*Style Titre principal*/
+.titre {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    font-family: Quicksand;
+    background-color: rgb(22, 34, 88);
+    color: white;
+}
+h1 {
+    text-align: center;
+    font-size: 70px;
+}
+quote {
+    font-style: italic;
+    font-size: 1.5em;
+}
+
+
+/* Liens */
+/* Liens sur passage du curseur */
+/* a:hover {
+    color : black;
+} */
+/*Liens par défaut*/
+a {
+    text-decoration: underline;
+    color: rgb(90, 90, 90);
+}
