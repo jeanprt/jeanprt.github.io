@@ -1,0 +1,102 @@
+body {
+    background-color: white;
+    padding: 0;
+    margin: 0;
+}
+
+/*Style conteneur Titre*/
+#encadré_titre {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    background-color: aliceblue;
+    padding: 30px;
+    margin-left: 260px;
+}
+
+/*Style Titre Principal*/
+.titre {
+    text-align: center;
+    padding: 15px;
+    font-family: Quicksand;
+    background-color: rgb(25, 40, 100);
+    color: white;
+    border-radius: 30px 30px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+quote {
+    font-style: italic;
+    font-size: 1em;
+}
+
+/* CONTENU PAGE */
+.contenu {
+    margin-left: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.section1 {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    background-color: black;
+    color: white;
+    font-family: Quicksand;
+    border-radius: 30px;
+    margin: 10px;
+    padding: 20px;
+    max-width: 1090px;
+}
+
+.section1 p {
+    margin: 20px;
+    padding: 10px;
+    background-color: rgb(145, 145, 145);
+    border-radius: 10px;
+}
+
+.section1  img {
+    margin: 10px;
+    background-color: white;
+    border-radius: 18px;
+    height: 300px;
+}
+
+/* blocs de contenu*/
+
+
+/* TOP BUTTON */
+#topbutton {
+    display: flex;
+    justify-content: right;
+    margin-left: 260px;
+    border-radius: 10px 10px;
+}
+a img {
+    margin  : 20px;
+    background-color: rgb(163, 163, 163);
+    border-radius: 10px 10px;
+    padding: 5px;
+}
+
+/* Liens */
+/* Liens sur passage du curseur */
+a:hover {
+    color : rgb(74, 107, 240)
+}
+/*Liens par défaut*/
+a {
+    text-decoration: underline;
+    color: rgb(255, 255, 255);
+}
