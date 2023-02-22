@@ -33,6 +33,8 @@ a {
 }
 
 #canvas {
+  fill: "#181818";
+  stroke: "#33ee55";
   margin: 0;
   width:100%;
 }
