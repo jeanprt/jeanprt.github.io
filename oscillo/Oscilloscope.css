@@ -1,0 +1,38 @@
+/* body {
+  font-family: Arial;
+  background: #181818;
+} */
+.oscillo {
+  text-align: center;
+  margin-left: 260px;
+}
+
+#controls {
+  color: #A0A0A0;
+}
+a {
+  color: #A0F0A0;
+}
+#on-off {
+  background-color: red;
+   border: 1px solid #A0A0A0;
+  border-radius: 15px;
+}
+#draw-toggle {
+  background-color: #686868;
+  border: 1px solid #A0A0A0;
+  border-radius: 15px;
+}
+
+#osc-types select {
+  background: #303030;
+  color: #A0F0A0;
+  border: 1px solid #A0A0A0;
+  border-radius: 15px;
+  margin: 10px
+}
+
+#canvas {
+  margin: 0;
+  width:100%;
+}
