@@ -50,16 +50,16 @@ function get_canvas() { // this initializes the canvas
   c = canvas.getContext('2d'); //sets canvas to 2 dimensions
   canvas.width = window.innerWidth; //sets canvas to fill the whole window width
   canvas.height = window.innerHeight/2; //sets canvas to use half window height
-  pixelRatio = window.devicePixelRatio;
+  pixelRatio = window.devicePixelRatio; //sets pixel ratio
   sizeOnScreen = canvas.getBoundingClientRect();
-  canvas.width = sizeOnScreen.width * pixelRatio;
-  canvas.height = sizeOnScreen.height * pixelRatio;
+  canvas.width = sizeOnScreen.width * pixelRatio; 
+  canvas.height = sizeOnScreen.height * pixelRatio; //sets canvas dimensions
   canvas.style.width = canvas.width / pixelRatio + "px";
   canvas.style.height = canvas.height / pixelRatio + "px";
   c.beginPath();
   c.moveTo(0, canvas.height / 2);
   c.lineTo(canvas.width, canvas.height / 2);
-  c.strokeStyle = "#33ee55";
+  c.strokeStyle = "#33ee55";//change line color here
   c.stroke();
 }
 
@@ -74,39 +74,37 @@ osc1GainSlider = document.getElementById("osc1-gain");
 osc2GainSlider = document.getElementById("osc2-gain");
 var mixedAudio = ac.createMediaStreamDestination();
 var merger = ac.createChannelMerger(2);
-var splitter = ac.createChannelSplitter(2);
+var splitter = ac.createChannelSplitter(2); // gets elements from DOM
 
-var channel1 = [0, 1];
-var channel2 = [1, 0];
-    if (isPlaying) {
+    if (isPlaying) { //if it is already playing, stop.
     oscillator1.stop();
     oscillator2.stop();
     powerBtn.innerHTML = "Turn On";
     document.getElementById("on-off").style.background = "red";
     } else {
       document.getElementById("on-off").style.background = "green";
-      oscillator1 = new OscillatorNode(ac, {
+      oscillator1 = new OscillatorNode(ac, {// create Oscillato1 node
         type: osc1Type.value,
         frequency: osc1FreqSlider.value
       });
-      oscillator2 = new OscillatorNode( ac, {
-      type: osc2Type.value,
-      frequency: osc2FreqSlider.value});
+      oscillator2 = new OscillatorNode( ac, {//create oscillator2 node
+        type: osc2Type.value,
+        frequency: osc2FreqSlider.value});
       oscillator1.connect(osc1_gainNode);
       osc1_gainNode.connect(master_gainNode);
       oscillator2.connect(osc2_gainNode);
       osc2_gainNode.connect(master_gainNode);
       master_gainNode.connect(analyser)
-      analyser.connect(ac.destination);
+      analyser.connect(ac.destination);// sets up node connections
       oscillator1.start();
-      oscillator2.start();
-      draw();
-      powerBtn.innerHTML = "Turn Off";
+      oscillator2.start();//start the oscillatorw
+      draw();//begin drawing
+      powerBtn.innerHTML = "Turn Off";//change the DOM button state
     }
     isPlaying = !isPlaying;
  };
 
-function osc1_freq_update(value) {
+function osc1_freq_update(value) {//Updates the frequency of osc1 given a value (triggered from DOM)
       let freq = value;
   document.getElementById("osc1-frequencyValue").innerHTML = freq;
   if (oscillator1 && isPlaying) {
@@ -114,7 +112,7 @@ function osc1_freq_update(value) {
   }
 };
 
-function osc2_freq_update(value) {
+function osc2_freq_update(value) {//Updates the frequency of osc1 given a value (triggered from DOM)
       let freq = value;
   document.getElementById("osc2-frequencyValue").innerHTML = freq;
   if (oscillator2 && isPlaying) {
@@ -122,21 +120,21 @@ function osc2_freq_update(value) {
   }
 };
 
-function osc1_waveform_update(value) {
+function osc1_waveform_update(value) {//updates osc1's waveform given a str (triggered from DOM)
     if (oscillator1 && isPlaying) {
     oscillator1.type = value
     }
 };
 
 
-function osc2_waveform_update(value) {
+function osc2_waveform_update(value) {//updates osc1's waveform given a str (triggered from DOM)
     if (oscillator2 && isPlaying) {
     oscillator2.type = value
     }
 };
 
 
-function osc1_gain_update(value) {
+function osc1_gain_update(value) {//updates the gain applied to osc1 by its gain node (triggered from DOM)
     let gain = value
     document.getElementById("osc1-gainValue").innerHTML = gain
     if (oscillator1 && isPlaying) {
@@ -145,7 +143,7 @@ function osc1_gain_update(value) {
 };
 
 
-function osc2_gain_update(value) {
+function osc2_gain_update(value) {//updates the gain applied to osc2 by its gain node (triggered from DOM)
     let gain = value
     document.getElementById("osc2-gainValue").innerHTML = gain
     if (oscillator2 && isPlaying) {
@@ -154,7 +152,7 @@ function osc2_gain_update(value) {
 };
 
 
-function master_gain_update(value) {
+function master_gain_update(value) {//updates the gain applied to master gain node (triggered from DOM)
     let gain = value
     document.getElementById("master-gainValue").innerHTML = gain
     if (oscillator1 && isPlaying) {
@@ -162,7 +160,7 @@ function master_gain_update(value) {
     }
 };
 
-function toggle_draw() {
+function toggle_draw() {//toggles wether or not the canvas draws current waveform or stays still
     isDrawing = !isDrawing;
 }
 
