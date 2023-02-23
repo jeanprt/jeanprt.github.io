@@ -1,21 +1,23 @@
-let oscillator1, isPlaying, pixelRatio, sizeOnScreen, segmentWidth, oscillator2, isDrawing;
+let oscillator1, isPlaying, pixelRatio, sizeOnScreen, segmentWidth, oscillator2, isDrawing;// setting up variables
+
 const ac = new AudioContext();
+
 isPlaying = false
 isDrawing = true
 
-analyser = new AnalyserNode(ac, {
+analyser = new AnalyserNode(ac, { //creates the Webaudio analyser node that will be used to analyze signal and draw it
   smoothingTimeConstant: 1,
   fftSize: 2048
 }),
 
 dataArray = new Uint8Array(analyser.frequencyBinCount);
 
-function draw () {
+function draw () { //draws a frame on the canvas
   analyser.getByteTimeDomainData(dataArray);
   requestAnimationFrame(draw);
     if (isDrawing) {
     segmentWidth = canvas.width / analyser.frequencyBinCount;
-    c.fillRect(0, 0, canvas.width, canvas.height);
+    c.clearRect(0, 0, canvas.width, canvas.height);
     c.beginPath();
     c.moveTo(-100, canvas.height / 2);
     }
@@ -31,23 +33,23 @@ c.lineTo(canvas.width + 100, canvas.height / 2);
 c.stroke();
 };
 
-osc1_gainNode = new GainNode(ac, {
+osc1_gainNode = new GainNode(ac, { //this is a webaudio gainNode used to manage Osc1 volume
   gain: 0.5
 })
 
-osc2_gainNode = new GainNode(ac, {
+osc2_gainNode = new GainNode(ac, { //this is a webaudio gainNode used to manage Osc2 volume
   gain: 0.5
 })
 
-master_gainNode = new GainNode(ac, {
+master_gainNode = new GainNode(ac, { //this is a webaudio gainNode used to manage master volume
   gain: 0.5
 })
 
-function get_canvas() {
-  const canvas = document.getElementById("canvas");
-  c = canvas.getContext('2d');
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight/2;
+function get_canvas() { // this initializes the canvas
+  const canvas = document.getElementById("canvas"); 
+  c = canvas.getContext('2d'); //sets canvas to 2 dimensions
+  canvas.width = window.innerWidth; //sets canvas to fill the whole window width
+  canvas.height = window.innerHeight/2; //sets canvas to use half window height
   pixelRatio = window.devicePixelRatio;
   sizeOnScreen = canvas.getBoundingClientRect();
   canvas.width = sizeOnScreen.width * pixelRatio;
@@ -58,6 +60,8 @@ function get_canvas() {
   c.beginPath();
   c.moveTo(0, canvas.height / 2);
   c.lineTo(canvas.width, canvas.height / 2);
+  c.strokeStyle = "#33ee55";
+
   c.stroke();
 }
 
