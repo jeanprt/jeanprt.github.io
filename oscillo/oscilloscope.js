@@ -56,12 +56,10 @@ function get_canvas() { // this initializes the canvas
   canvas.height = sizeOnScreen.height * pixelRatio;
   canvas.style.width = canvas.width / pixelRatio + "px";
   canvas.style.height = canvas.height / pixelRatio + "px";
-  c.fillRect(0, 0, canvas.width, canvas.height);
   c.beginPath();
   c.moveTo(0, canvas.height / 2);
   c.lineTo(canvas.width, canvas.height / 2);
   c.strokeStyle = "#33ee55";
-
   c.stroke();
 }
 
