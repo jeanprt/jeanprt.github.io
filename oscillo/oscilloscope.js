@@ -32,35 +32,33 @@ c.stroke();
 };
 
 osc1_gainNode = new GainNode(ac, {
-    gain: 0.5
+  gain: 0.5
 })
 
 osc2_gainNode = new GainNode(ac, {
-    gain: 0.5
+  gain: 0.5
 })
 
 master_gainNode = new GainNode(ac, {
-    gain: 0.5
+  gain: 0.5
 })
 
 function get_canvas() {
-const canvas = document.getElementById("canvas");
-c = canvas.getContext('2d');
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight/2;
-pixelRatio = window.devicePixelRatio;
-sizeOnScreen = canvas.getBoundingClientRect();
-canvas.width = sizeOnScreen.width * pixelRatio;
-canvas.height = sizeOnScreen.height * pixelRatio;
-canvas.style.width = canvas.width / pixelRatio + "px";
-canvas.style.height = canvas.height / pixelRatio + "px";
-c.fillStyle = "#181818";
-c.fillRect(0, 0, canvas.width, canvas.height);
-c.strokeStyle = "#33ee55";
-c.beginPath();
-c.moveTo(0, canvas.height / 2);
-c.lineTo(canvas.width, canvas.height / 2);
-c.stroke();
+  const canvas = document.getElementById("canvas");
+  c = canvas.getContext('2d');
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight/2;
+  pixelRatio = window.devicePixelRatio;
+  sizeOnScreen = canvas.getBoundingClientRect();
+  canvas.width = sizeOnScreen.width * pixelRatio;
+  canvas.height = sizeOnScreen.height * pixelRatio;
+  canvas.style.width = canvas.width / pixelRatio + "px";
+  canvas.style.height = canvas.height / pixelRatio + "px";
+  c.fillRect(0, 0, canvas.width, canvas.height);
+  c.beginPath();
+  c.moveTo(0, canvas.height / 2);
+  c.lineTo(canvas.width, canvas.height / 2);
+  c.stroke();
 }
 
 
