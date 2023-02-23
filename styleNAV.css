@@ -2,7 +2,7 @@ nav ul {
 	margin: 0;
 	padding: 0;
 	height: 100%;
-	width: 260px;
+	width: 230px;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -16,10 +16,10 @@ nav ul li a {
 	font-family: 'Montserrat', sans-serif;
 	text-decoration: none;
 	text-transform: uppercase;
-	font-size: 20px;
+	font-size: 17px;
 	color: #fff;
 	position: relative;
-	padding: 25px 0 25px 38px;
+	padding: 20px 0 20px 38px;
 }
 
 nav ul li a:before {
@@ -53,25 +53,10 @@ nav ul li a:hover {
 nav ul li a:hover:before {
 	width: 95%;
 }
-.section {
-	display: grid;
-	place-items: center;
-	min-height: 100vh;
-	text-align: center;
-}
-.box-area h2 {
-	text-transform: uppercase;
-	font-size: 50px;
-}
-.box-area p {
-	line-height: 2;
-}
-.box-area {
-	width: 75%;
-}
+
 .logo {
-	width: 150px;
-	height: 150px;
+	width: 100px;
+	height: 100px;
 	overflow: hidden;
 	margin: 25px auto;
 	filter: invert(100%);

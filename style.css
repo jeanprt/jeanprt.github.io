@@ -14,14 +14,8 @@ body {
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(240, 253, 255);
     padding: 50px;
-    margin-left: 260px;
-}
-@media (prefers-color-scheme: dark) {
-    #encadré_titre {
-        background-color: rgb(29, 34, 40);
-    }
+    margin-left: 230px;
 }
 
 /*Style Titre Principal*/
@@ -51,7 +45,7 @@ quote {
 
 /* CONTENU PAGE */
 .contenu {
-    margin-left: 260px;
+    margin-left: 230px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
