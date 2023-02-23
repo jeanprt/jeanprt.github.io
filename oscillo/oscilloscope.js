@@ -91,11 +91,11 @@ var splitter = ac.createChannelSplitter(2); // gets elements from DOM
         type: osc2Type.value,
         frequency: osc2FreqSlider.value});
       oscillator1.connect(osc1_gainNode);
-      osc1_gainNode.connect(master_gainNode);
+      osc1_gainNode.connect(analyser);
       oscillator2.connect(osc2_gainNode);
-      osc2_gainNode.connect(master_gainNode);
-      master_gainNode.connect(analyser)
-      analyser.connect(ac.destination);// sets up node connections
+      osc2_gainNode.connect(analyser);
+      analyser.connect(master_gainNode)
+      master_gainNode.connect(ac.destination);// sets up node connections
       oscillator1.start();
       oscillator2.start();//start the oscillatorw
       draw();//begin drawing
