@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="styleNAV.css">
     <link rel="stylesheet" href="oscillo/Oscilloscope.css">
     <script type="text/javascript" src="oscillo/oscilloscope.js"></script>
@@ -37,14 +37,15 @@
             </ul>
         </nav>
 
+        <div id="encadré_titre">
+            <div class="titre">
+                <h1>Oscilloscope</h1>
+                <quote>Vous trouverez ici une siomulation d'oscilloscope pour illustrer  nos propos précédents...</quote>
+            </div>
+        </div>
+
         <!-- Conteneur général contenu -->
         <div class="contenu">
-            <!-- Conteneur titre -->
-            <div class="section0">
-                <div class="titre">
-                    <h1>Oscilloscope</h1>
-                </div>
-            </div>
             
             <div class="oscillo">
                 <div id="controls">
@@ -74,7 +75,7 @@
                     
                     <div id="osc-frequencies">
                         <label for="osc1-frequency">Osc.1 Frequency: <span id="osc1-frequencyValue">440</span></label>
-                        <input id="osc1-frequency" type="range" min="40" max="1760" step="1" value="440" oninput="osc1_freq_update(this.value)" class="input-knob"/>
+                        <input id="osc1-frequency" type="range" min="40" max="1760" step="1" value="440" oninput="osc1_freq_update(this.value)" class="input-knob" data-bgcolor="#2040c0"/>
                         <label for="osc2-frequency">Osc.2 Frequency: <span id="osc2-frequencyValue">440</span></label>
                         <input id="osc2-frequency" type="range" min="40" max="1760" step="1" value="440" oninput="osc2_freq_update(this.value)" class="input-knob"/>
                     </div>
