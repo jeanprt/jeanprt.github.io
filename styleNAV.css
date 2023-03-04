@@ -43,6 +43,7 @@ nav ul li a:before {
 
 nav ul li a:hover {
 	color: #2b2626;
+	text-decoration: none;
 }
 
 @media (prefers-color-scheme: dark) {

@@ -107,10 +107,6 @@ quote {
     border-radius: 30px;
 }
 
-a {
-    color: #A0F0A0;
-}
-
 #on-off {
     background-color: red;
     border: 1px solid #A0A0A0;
@@ -139,7 +135,7 @@ a {
 #topbutton {
     display: flex;
     justify-content: right;
-    margin-left: 260px;
+    margin-left: 230px;
     border-radius: 10px 10px;
 }
 a img {
@@ -149,13 +145,51 @@ a img {
     padding: 5px;
 }
 
+/* PIED DE PAGE */
+footer {
+    margin-left: 230px;
+    background-color: rgba(255, 255, 255, 0.478);
+}
+.pied_de_page {
+    display: flex;
+    flex-direction: row;
+    font-family: Quicksand;
+    position: bottom;
+}
+.logos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.blabla {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    border-radius: 15px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.478);
+    font-size: 13px;
+    padding-bottom: 20px;
+    text-align: justify;
+    width: 50%;
+}
+footer .pied_de_page .blabla ul {
+    line-height: 30px;
+    list-style-type: none;
+    padding: 0;
+}
 /* Liens */
 /* Liens sur passage du curseur */
 a:hover {
-    color : rgb(74, 107, 240)
+    color: #686868;
 }
-/*Liens par défaut*/
-a {
+a:active {
     text-decoration: underline;
-    color: rgb(255, 255, 255);
+}
+
+/* Liens par défaut */
+a {
+    text-decoration: inherit;
+    color: inherit;
 }
