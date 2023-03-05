@@ -138,23 +138,16 @@ quote {
     margin-left: 230px;
     border-radius: 10px 10px;
 }
-a img {
-    margin  : 20px;
-    background-color: rgb(163, 163, 163);
-    border-radius: 10px 10px;
-    padding: 5px;
-}
 
 /* PIED DE PAGE */
 footer {
     margin-left: 230px;
-    background-color: rgba(255, 255, 255, 0.478);
+    background-color: rgb(255, 255, 255, 0.5);
 }
 .pied_de_page {
     display: flex;
     flex-direction: row;
     font-family: Quicksand;
-    position: bottom;
 }
 .logos {
     display: flex;
@@ -168,7 +161,7 @@ footer {
     margin: 10px;
     border-radius: 15px;
     padding: 30px;
-    background-color: rgba(255, 255, 255, 0.478);
+    background-color: rgba(255, 255, 255, 0.5);
     font-size: 13px;
     padding-bottom: 20px;
     text-align: justify;
@@ -179,6 +172,22 @@ footer .pied_de_page .blabla ul {
     list-style-type: none;
     padding: 0;
 }
+.logos img {
+    margin  : 20px;
+    background-color: rgb(163, 163, 163);
+    border-radius: 10px 10px;
+    padding: 5px;
+}
+
+@media (prefers-color-scheme: dark) {
+    footer,
+    .blabla,
+    .logos img {
+        background-color: rgba(18, 18, 18, 0.5);
+        color: white;
+    }
+}
+
 /* Liens */
 /* Liens sur passage du curseur */
 a:hover {
