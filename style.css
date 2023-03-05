@@ -9,7 +9,7 @@ body {
 
 
 /*Style conteneur Titre*/
-#encadré_titre {
+.encadré_titre {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -30,7 +30,7 @@ body {
 }
 
 h1 {
-    font-size: 4.1em;
+    font-size: 3.1em;
 }
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     h1 {
@@ -182,7 +182,7 @@ footer .pied_de_page .blabla ul {
 /* Liens */
 /* Liens sur passage du curseur */
 a:hover {
-    color: #686868;
+    font-size: 105%;
 }
 a:active {
     text-decoration: underline;
