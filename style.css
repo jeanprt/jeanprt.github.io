@@ -66,19 +66,10 @@ quote {
     padding: 20px;
     max-width: 1090px;
 }
-
 .section1 p {
     margin: 20px;
     padding: 10px;
-    /*background-color: rgb(145, 145, 145);
-    border-radius: 10px;*/
 }
-/* @media (prefers-color-scheme: dark) {
-    .section1 p {
-        background-color: rgb(100, 100, 100);
-    }
-} */
-
 .section1  img {
     margin: 10px;
     background-color: white;
@@ -136,7 +127,7 @@ quote {
     display: flex;
     justify-content: right;
     margin-left: 230px;
-    border-radius: 10px 10px;
+    border-radius: 10px;
 }
 
 /* PIED DE PAGE */
@@ -196,9 +187,22 @@ a:hover {
 a:active {
     text-decoration: underline;
 }
-
+a:visited {
+    color: invert();
+}
 /* Liens par défaut */
 a {
     text-decoration: inherit;
     color: inherit;
+}
+
+/* Sélection du curseur */
+::selection {
+    background-color : #000000;
+    color : #fff
+}
+
+::-moz-selection {
+    background-color : #000000;
+    color : #fff
 }

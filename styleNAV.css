@@ -6,7 +6,7 @@ nav ul {
 	position: fixed;
 	top: 0;
 	left: 0;
-	background-color: #262626;
+	background-color: rgb(25, 41, 49);
 }
 nav ul li {
 	list-style: none;
