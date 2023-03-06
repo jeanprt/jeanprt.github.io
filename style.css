@@ -122,14 +122,6 @@ quote {
     width:100%;
 }
 
-/* TOP BUTTON */
-#topbutton {
-    display: flex;
-    justify-content: right;
-    margin-left: 230px;
-    border-radius: 10px;
-}
-
 /* PIED DE PAGE */
 footer {
     margin-left: 230px;
