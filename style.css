@@ -76,27 +76,33 @@ quote {
     }
 }
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    body {
+        background-color: rgb(255, 255, 255);
+        background-image: none;
+        margin-left: 0%;
+    }
     .section {
         flex-direction: column;
-        width: 950px;
+        width: auto;
         font-size: 1.3em;
         padding-top: 30px;
         padding-bottom: 30px;
     }
     .section img {
         height: 550px;
+        max-width: 890px;
     }
     #bloc2.section {
         flex-direction: column;
     }
-    .contenu {
-        margin-left: none;
+    .encadré_titre {
+        display: none;
     }
-    h1 {
-        font-size: 1em;
+    .contenu {
+        margin-left: 0px;
     }
     footer {
-        margin-left: none;
+        margin-left: 0px;
     }
 }
 
