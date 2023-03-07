@@ -78,8 +78,13 @@ quote {
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     .section {
         flex-direction: column;
-        width: 900px;
+        width: 950px;
         font-size: 1.3em;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .section img {
+        height: 550px;
     }
     #bloc2.section {
         flex-direction: column;
