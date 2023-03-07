@@ -79,6 +79,7 @@ quote {
     .section {
         flex-direction: column;
         width: 900px;
+        font-size: 1.3em;
     }
     #bloc2.section {
         flex-direction: column;
