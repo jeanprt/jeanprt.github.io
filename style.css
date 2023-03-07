@@ -80,6 +80,11 @@ quote {
         background-color: rgb(18, 18, 18);
     }
 }
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .section {
+        flex-direction: column;
+    }
+}
 
 /* Blocs pour chaque paragraphe de contenu */
 /* Page Intro */
@@ -105,8 +110,8 @@ quote {
     color: rgb(241, 243, 245);
 }
 
-/* Bloc Oscillo*/
 
+/* Bloc Oscillo*/
 .oscillo {
     font-family: Quicksand;
     text-align: center;

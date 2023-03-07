@@ -65,3 +65,9 @@ nav ul li a:hover:before {
 .logo img {
 	width: 100%;
 }
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    nav {
+		display: none;
+	}
+}
