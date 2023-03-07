@@ -78,7 +78,7 @@ quote {
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     .section {
         flex-direction: column;
-        width: 750px;
+        width: 900px;
     }
     #bloc2.section {
         flex-direction: column;
