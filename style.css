@@ -53,7 +53,7 @@ quote {
     padding: 20px;
 }
 
-.section1 {
+.section {
     align-items: center;
     display: flex;
     flex-direction: row;
@@ -66,22 +66,44 @@ quote {
     padding: 20px;
     max-width: 1090px;
 }
-.section1 p {
+.section p {
     margin: 20px;
     padding: 10px;
 }
-.section1  img {
+.section  img {
     margin: 10px;
     background-color: white;
     border-radius: 18px;
 }
 @media (prefers-color-scheme: dark) {
-    .section1  img {
+    .section  img {
         background-color: rgb(18, 18, 18);
     }
 }
 
-/* bloc Oscillo*/
+/* Blocs pour chaque paragraphe de contenu */
+/* Page Intro */
+
+/* Page "Histoire" */
+#bloc1 {
+    background: linear-gradient(rgba(145, 116, 97, 0.80), rgba(97, 37, 46, 0.80));
+    color: rgb(241, 243, 245);
+}
+#bloc2 {
+    background: linear-gradient(rgba(6, 68, 104, 0.80), rgba(254, 217, 157, 0.50));
+    color: rgb(241, 243, 245);
+    flex-direction: row-reverse;
+}
+#bloc3 {
+    background: linear-gradient(rgba(6, 68, 104, 0.80), rgba(254, 217, 157, 0.50));
+    color: rgb(241, 243, 245);
+}
+#bloc4 {
+    background: linear-gradient(rgba(58, 117, 103, 0.80), rgba(254, 217, 157, 0.50));
+    color: rgb(241, 243, 245);
+}
+
+/* Bloc Oscillo*/
 
 .oscillo {
     text-align: center;
@@ -155,6 +177,10 @@ footer .pied_de_page .blabla ul {
     list-style-type: none;
     padding: 0;
 }
+footer .pied_de_page .blabla ul :hover {
+    transition: all 0.5s;
+    transform: scale(1.2);
+}
 .logos img {
     margin  : 20px;
     background-color: rgb(163, 163, 163);
@@ -173,9 +199,6 @@ footer .pied_de_page .blabla ul {
 
 /* Liens */
 /* Liens sur passage du curseur */
-a:hover {
-    font-size: 105%;
-}
 a:active {
     text-decoration: underline;
 }
