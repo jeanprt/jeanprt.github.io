@@ -32,11 +32,6 @@ body {
 h1 {
     font-size: 3.1em;
 }
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-    h1 {
-    font-size: 1em;
-    }
-}
 
 quote {
     font-style: italic;
@@ -83,6 +78,19 @@ quote {
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     .section {
         flex-direction: column;
+        width: 750px;
+    }
+    #bloc2.section {
+        flex-direction: column;
+    }
+    .contenu {
+        margin-left: none;
+    }
+    h1 {
+        font-size: 1em;
+    }
+    footer {
+        margin-left: none;
     }
 }
 
