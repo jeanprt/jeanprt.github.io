@@ -1,3 +1,5 @@
+/* Style pour la balise nav sur ordi */
+
 nav ul {
 	margin: 0;
 	padding: 0;
@@ -20,6 +22,7 @@ nav ul li a {
 	color: #fff;
 	position: relative;
 	padding: 20px 0 20px 38px;
+	font-weight: normal;
 }
 
 nav ul li a:before {
@@ -66,6 +69,8 @@ nav ul li a:hover:before {
 	width: 100%;
 }
 
+
+/* Style pour la barre de navigation sur telephone */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     nav {
 		display: none;
