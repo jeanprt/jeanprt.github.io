@@ -81,6 +81,9 @@ quote {
         background-image: none;
         margin-left: 0%;
     }
+    .contenu {
+        margin-left: 0px;
+    }
     .section {
         flex-direction: column;
         width: auto;
@@ -103,14 +106,10 @@ quote {
         color: rgb(25, 41, 49);
         font-size: 175%;
     }
-    .contenu {
-        margin-left: 0px;
-    }
     footer {
         margin-left: 0px;
     }
 }
-
 /* Blocs pour chaque paragraphe de contenu */
 /* Page Intro */
 #bloc0 {
@@ -180,8 +179,8 @@ quote {
 
 /* PIED DE PAGE */
 footer {
-    margin-left: 230px;
     background-color: rgb(255, 255, 255, 0.5);
+    margin-left: 230px;
 }
 .pied_de_page {
     display: flex;
@@ -237,7 +236,7 @@ a:active {
 }
 footer a:visited {
     color: rgb(69, 69, 69);
-}
+}s
 footer .logos :hover {
     transition: all 0.5s;
     transform: scale(1.2);
