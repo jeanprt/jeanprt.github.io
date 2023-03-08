@@ -107,6 +107,7 @@ quote {
         font-size: 175%;
     }
     footer {
+        display: none;
         margin-left: 0px;
     }
 }
