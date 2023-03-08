@@ -32,11 +32,6 @@ body {
 h1 {
     font-size: 3.1em;
 }
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-    h1 {
-    font-size: 1em;
-    }
-}
 
 quote {
     font-style: italic;
@@ -80,6 +75,36 @@ quote {
         background-color: rgb(18, 18, 18);
     }
 }
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    body {
+        background-color: rgb(255, 255, 255);
+        background-image: none;
+        margin-left: 0%;
+    }
+    .section {
+        flex-direction: column;
+        width: auto;
+        font-size: 1.3em;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .section img {
+        height: 550px;
+        max-width: 890px;
+    }
+    #bloc2.section {
+        flex-direction: column;
+    }
+    .encadré_titre {
+        display: none;
+    }
+    .contenu {
+        margin-left: 0px;
+    }
+    footer {
+        margin-left: 0px;
+    }
+}
 
 /* Blocs pour chaque paragraphe de contenu */
 /* Page Intro */
@@ -105,8 +130,8 @@ quote {
     color: rgb(241, 243, 245);
 }
 
-/* Bloc Oscillo*/
 
+/* Bloc Oscillo*/
 .oscillo {
     font-family: Quicksand;
     text-align: center;
