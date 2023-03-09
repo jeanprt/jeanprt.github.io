@@ -61,14 +61,28 @@
         <!-- Conteneur général contenu -->
         <div class="contenu">
             <div class="section" id="bloc1">
-                <p>La fréquence d'échantillonnage est un concept clé en matière de traitement de signaux numériques.
-                    Elle détermine le nombre d'échantillons de données recueillis par unité de temps,
-                    et est utilisée dans de nombreux domaines, notamment l'audio, la vidéo,
-                    la mesure de la température et la surveillance environnementale.
+                <p>
+                    L'Échantillonage est une technique d'enregistrement du signal qui est basée sur le relevé d'échantillons de signal pris à intervalle régulier.
+                    Plus l'intervalle entre les échantillons est court, plus le signal est précisément enregistré.<br/><br/>
+                    L'Échantillonage n'est pas la seule technique d'enregistrement du son, il existe des enregistrements analogiques et par décomposition du signal, 
+                    mais un enregistrement analogique est impossible à représenter numériquement et un enregistrement par décomposition du signal sera de toutes façons restitué par échantillonnage car il est limité par la vitesse du processeur, qui fonctionne par étapes. <br/>
+                    On a donc retenu la technique de l'échantillonnage pour représenter les sons de manière numérique.
                 </p>
                 <img src="images/échantillonnage.jpg" height="300px">
             </div>
             <div class="section" id="bloc2">
+                <p>
+                    La fréquence d'échantillonnage est l'inverse de l'intevalle de temps entre la mesure deux échantillons. Elle est mesurée en Hz.
+                    De ce fait, plus la fréquence d'échantillonnage est élevée, plus l'enregistrement sera précis dans le temps, et plus l'onde enregistrée sera proche de l'onde originale.<br/>
+                    Mais la fréquence n'est pas le seul facteur déterminant la précision de l'échantillonnage: elle dépend aussi du nombre de bits sur lequel est codé chaque échantillon, de sa profondeur. 
+                    En effet, plus ce nombre est grand, plus le potentiel de l'onde au moment de l'enregistrement de l'échantillon sera enregistré précisément, et plus la restitution en sera précse.<br/>
+                    Le bitrate d'un enregistrement est la quantité d'information numérique qu'il contient, pour de l'audio, il se mesure typiquement en KB/s on peut le calculer en multipliant la fréquence d'échantillonnage par sa profondeur. 
+                    Les formats classiques comme le MP3, ont un bitrate limité, mais ce genre de format supportent la compression, qui peut être le sujet s'un autre site web à elle seule.
+                    Le bitrate de formats non compressés tels que le format .wav ont un bitrate de 1411 KB/s pour un enregistrement à 44.1 kHz de 16 bits de profondeur.
+                </p>
+                <img src="images/Bit depth.png" height="300px"/>
+            </div>
+            <div class="section" id="bloc3">
             <p>
                 Aujourd'hui, l'échantillonnage n'est pas une tâche extrèmement complexe pour nos ordinateurs, grâce au fait que l'échantillonnage soit la seule manière 
                 de réellement enregister un signal sonore l'a répandu, et aujourd'hui, tous les ordinateurs possèdent un DAC et un ADC,
