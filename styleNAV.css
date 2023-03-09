@@ -38,10 +38,8 @@
 	transition: all 300ms ease-in-out;
 }
 
-@media (prefers-color-scheme: dark) {
-    .nav ul li a:before {
-        background-color: rgb(18, 18, 18);
-    }
+.nav ul li a:hover {
+	color: inherit;
 }
 
 .nav ul li a:hover {
@@ -50,10 +48,14 @@
 }
 
 @media (prefers-color-scheme: dark) {
-    nav ul li a:hover {
-		color: #fff;
+    .nav ul li a:before {
+        background-color: rgb(18, 18, 18);
+    }
+	.nav ul li a:hover{
+		color: white;
 	}
 }
+
 .nav ul li a:hover:before {
 	width: 95%;
 }
@@ -186,5 +188,16 @@
 	  
 	#menuToggle input:checked ~ ul {
 		transform: none;
+	}
+	@media (prefers-color-scheme: dark) {
+		#menu {
+			background-color: rgba(0, 0, 0, 0.90);
+		}
+		#menuToggle input:checked ~ span {
+			background: white;
+		}
+		.nav_mobile #menuToggle ul li a {
+			color: white;
+		}
 	}
 }
