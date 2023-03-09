@@ -7,7 +7,6 @@ body {
     margin: 0;
 }
 
-
 /*Style conteneur Titre*/
 .encadré_titre {
     display: flex;
@@ -23,8 +22,8 @@ body {
     text-align: center;
     padding: 10px;
     font-family: Jura;
-    background-color: rgb(25, 41, 49);
-    color: white;
+    background-color: blanchedalmond;
+    color: rgb(15, 26, 32);
     border-radius: 30px 30px;
     width: auto;
 }
@@ -75,11 +74,14 @@ quote {
         background-color: rgb(18, 18, 18);
     }
 }
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 900px) {
     body {
         background-color: rgb(25, 41, 49);
         background-image: none;
         margin-left: 0%;
+    }
+    .contenu {
+        margin-left: 0px;
     }
     .section {
         flex-direction: column;
@@ -99,18 +101,13 @@ quote {
         margin-left: 0px;
     }
     .titre {
-        background-color: beige;
         color: rgb(25, 41, 49);
         font-size: 175%;
     }
-    .contenu {
-        margin-left: 0px;
-    }
     footer {
-        margin-left: 0px;
+        display: none;
     }
 }
-
 /* Blocs pour chaque paragraphe de contenu */
 /* Page Intro */
 #bloc0 {
@@ -180,8 +177,8 @@ quote {
 
 /* PIED DE PAGE */
 footer {
-    margin-left: 230px;
     background-color: rgb(255, 255, 255, 0.5);
+    margin-left: 230px;
 }
 .pied_de_page {
     display: flex;
@@ -237,7 +234,7 @@ a:active {
 }
 footer a:visited {
     color: rgb(69, 69, 69);
-}
+}s
 footer .logos :hover {
     transition: all 0.5s;
     transform: scale(1.2);
