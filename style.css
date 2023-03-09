@@ -7,7 +7,6 @@ body {
     margin: 0;
 }
 
-
 /*Style conteneur Titre*/
 .encadré_titre {
     display: flex;
@@ -23,8 +22,8 @@ body {
     text-align: center;
     padding: 10px;
     font-family: Jura;
-    background-color: rgb(25, 41, 49);
-    color: white;
+    background-color: blanchedalmond;
+    color: rgb(15, 26, 32);
     border-radius: 30px 30px;
     width: auto;
 }
@@ -102,7 +101,6 @@ quote {
         margin-left: 0px;
     }
     .titre {
-        background-color: beige;
         color: rgb(25, 41, 49);
         font-size: 175%;
     }
