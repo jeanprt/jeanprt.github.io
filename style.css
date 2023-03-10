@@ -110,26 +110,35 @@ quote {
 }
 /* Blocs pour chaque paragraphe de contenu */
 /* Page Intro */
-#bloc0 {
+#bloc1-1 {
     background: linear-gradient( rgba(249, 213, 182, 0.80), rgba(167, 216, 255, 0.80));
 }
 /* Page "Histoire" */
-#bloc1 {
+#bloc2-1 {
     background: linear-gradient(rgba(145, 116, 97, 0.80), rgba(97, 37, 46, 0.80));
     color: rgb(241, 243, 245);
 }
-#bloc2 {
+#bloc2-2 {
     background: linear-gradient(rgba(6, 68, 104, 0.80), rgba(254, 217, 157, 0.50));
     color: rgb(241, 243, 245);
     flex-direction: row-reverse;
 }
-#bloc3 {
-    background: linear-gradient(rgba(6, 68, 104, 0.80), rgba(254, 217, 157, 0.50));
+#bloc2-3 {
+    background: linear-gradient(rgba(254, 217, 157, 0.50),rgba(58, 117, 103, 0.80));
     color: rgb(241, 243, 245);
 }
-#bloc4 {
+#bloc2-4 {
     background: linear-gradient(rgba(58, 117, 103, 0.80), rgba(254, 217, 157, 0.50));
     color: rgb(241, 243, 245);
+}
+#bloc3-1 {
+    background-color: rgba(211, 211, 211, 0.8);
+}
+#bloc3-2 {
+    background: linear-gradient( rgba(28, 173, 226,0.80), rgba(15, 101, 133, 0.8));
+}
+#bloc3-3 {
+    background: linear-gradient(rgba(134, 212, 233,0.80),rgba(21, 23, 181,0.80));
 }
 
 
