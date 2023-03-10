@@ -121,7 +121,6 @@ quote {
 #bloc2-2 {
     background: linear-gradient(rgba(6, 68, 104, 0.80), rgba(254, 217, 157, 0.50));
     color: rgb(241, 243, 245);
-    flex-direction: row-reverse;
 }
 #bloc2-3 {
     background: linear-gradient(rgba(254, 217, 157, 0.50),rgba(58, 117, 103, 0.80));
