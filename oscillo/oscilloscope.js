@@ -59,7 +59,7 @@ function get_canvas() { // this initializes the canvas
   c.beginPath();
   c.moveTo(0, canvas.height / 2);
   c.lineTo(canvas.width, canvas.height / 2);
-  c.strokeStyle = "#33ee55";//change line color here
+  c.strokeStyle = "rgb(168, 201, 219)";//change line color here
   c.stroke();
 }
 
@@ -80,9 +80,11 @@ var splitter = ac.createChannelSplitter(2); // gets elements from DOM
     oscillator1.stop();
     oscillator2.stop();
     powerBtn.innerHTML = "Turn On";
-    document.getElementById("on-off").style.background = "red";
+    document.getElementById("on-off").style.background = "rgb(168, 201, 219)";
+    document.getElementById("on-off").style.color = "rgb(24, 41, 49)";
     } else {
-      document.getElementById("on-off").style.background = "green";
+      document.getElementById("on-off").style.background = "rgb(24, 41, 49)";
+      document.getElementById("on-off").style.color = "rgb(168, 201, 219)";
       oscillator1 = new OscillatorNode(ac, {// create Oscillato1 node
         type: osc1Type.value,
         frequency: osc1FreqSlider.value

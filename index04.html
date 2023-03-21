@@ -56,7 +56,7 @@
         <div class="encadré_titre">
             <div class="titre">
                 <h1>Oscilloscope</h1>
-                <quote>Vous trouverez ici une siomulation d'oscilloscope pour illustrer nos propos précédents...</quote>
+                <quote>Vous trouverez ici une simulation d'oscilloscope pour illustrer nos propos précédents...</quote>
             </div>
         </div>
         <!-- Conteneur général contenu -->
@@ -90,21 +90,21 @@
                     
                     <div id="osc-frequencies">
                         <label for="osc1-frequency">Osc.1 Frequency: <span id="osc1-frequencyValue">440</span></label>
-                        <input id="osc1-frequency" type="range" min="40" max="1760" step="1" value="440" oninput="osc1_freq_update(this.value)" class="input-knob" data-bgcolor="#2040c0"/>
+                        <input id="osc1-frequency" type="range" min="40" max="1760" step="1" value="440" oninput="osc1_freq_update(this.value)" class="input-knob" data-bgcolor="rgb(24, 41, 49)" data-fgcolor="rgb(168, 201, 219)"/>
                         <label for="osc2-frequency">Osc.2 Frequency: <span id="osc2-frequencyValue">440</span></label>
-                        <input id="osc2-frequency" type="range" min="40" max="1760" step="1" value="440" oninput="osc2_freq_update(this.value)" class="input-knob"/>
+                        <input id="osc2-frequency" type="range" min="40" max="1760" step="1" value="440" oninput="osc2_freq_update(this.value)" class="input-knob"data-bgcolor="rgb(24, 41, 49)" data-fgcolor="rgb(168, 201, 219)"/>
                     </div>
 
                     <div id="osc-gains">
                         <label for="osc1-gain">Osc.1 Input Gain: <span id="osc1-gainValue">0.5</span></label>
-                        <input id="osc1-gain" type="range" min="0" max="1" step="0.05" value="0.5" oninput="osc1_gain_update(this.value)" class="input-knob"/>
+                        <input id="osc1-gain" type="range" min="0" max="1" step="0.05" value="0.5" oninput="osc1_gain_update(this.value)" class="input-knob"data-bgcolor="rgb(24, 41, 49)" data-fgcolor="rgb(168, 201, 219)"/>
                         <label for="osc2-gain">Osc.2 Input Gain: <span id="osc2-gainValue">0.5</span></label>
-                        <input id="osc2-gain" type="range" min="0" max="1" step="0.05" value="0.5" oninput="osc2_gain_update(this.value)" class="input-knob"/>
+                        <input id="osc2-gain" type="range" min="0" max="1" step="0.05" value="0.5" oninput="osc2_gain_update(this.value)" class="input-knob"data-bgcolor="rgb(24, 41, 49)" data-fgcolor="rgb(168, 201, 219)"/>
                     </div>
-
+                    <br>
                     <label for="master-gain">Master Gain: <span id="master-gainValue">0.5</span></label>
-                    <input id="master-gain" type="range" min="0" max="1" step="0.05" value="0.5" oninput="master_gain_update(this.value)" class="input-knob"/>
-                
+                    <input id="master-gain" type="range" min="0" max="1" step="0.05" value="0.5" oninput="master_gain_update(this.value)" class="input-knob"data-bgcolor="rgb(24, 41, 49)" data-fgcolor="rgb(168, 201, 219)"/>
+                    <br>
                     <div id="draw_stop">
                     <button id="draw-toggle" onclick="toggle_draw()">Toggle drawing</button>
                     </div>

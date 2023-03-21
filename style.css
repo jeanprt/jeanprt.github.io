@@ -161,10 +161,7 @@ quote {
     border-radius: 30px;
 }
   
-#controls {
-    display: flex;
-    flex-direction: column;
-    color: #A0A0A0;
+#controls { 
     padding: 10px;
     background-color: white;
     border-radius: 30px;
@@ -172,19 +169,30 @@ quote {
 
 #on-off {
     font-family: Jura;
-    background-color: red;
+    background-color: rgb(168, 201, 219);
     border: 1px solid #A0A0A0;
     border-radius: 15px;
+}
+#on-off:hover {
+    font-size: 102%;
 }
 #draw-toggle {
-    background-color: #686868;
+    font-family: Jura;
+    background-color: rgb(24, 41, 49);
+    color: rgb(168, 201, 219);
     border: 1px solid #A0A0A0;
     border-radius: 15px;
 }
-  
+#draw-toggle:hover {
+    font-size: 102%;
+}
+#draw-toggle:active {
+    background-color: rgb(168, 201, 219);
+    color: rgb(24, 41, 49);
+}
 #osc-types select {
     background: #303030;
-    color: #A0F0A0;
+    color: rgb(168, 201, 219);
     border: 1px solid #A0A0A0;
     border-radius: 15px;
     margin: 10px
