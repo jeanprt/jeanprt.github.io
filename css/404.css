@@ -1,0 +1,59 @@
+body {
+    background-image: url('../images/waveform.jpeg');
+    background-color: rgb(15, 26, 32);
+    background-attachment:fixed;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+}
+
+/* Conteneur page */
+.p404 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Titre */
+.titre {
+    padding-top: 200px;
+    font-family: Jura;
+    color: white;
+}
+h1 {
+    font-size: 500%;
+}
+
+/* Liens */
+li {
+	list-style: none;
+    padding-top: 4px;
+}
+a {
+    text-align: center;
+    display: flex;
+    font-family: Jura;
+	display: block;
+	text-decoration: none;
+	font-size: 30px;
+	color: white;
+    background-color: #000000;
+    border-radius: 10px;
+}
+
+nav ul li a:hover {
+	color: #2b2626;
+	text-decoration: none;
+    background-color: #fff;
+}
+
+/* Sélection du curseur */
+::selection {
+    background-color : #000000;
+    color : #fff
+}
+
+::-moz-selection {
+    background-color : #000000;
+    color : #fff
+}
