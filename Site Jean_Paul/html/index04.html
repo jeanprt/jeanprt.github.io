@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/styleNAV.css">
+    <script type="text/javascript" src="../js/oscilloscope.js"></script>
+    <script type="text/javascript" src="../js/input-knobs.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jura">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Work+Sans:400,600">
+    <title>Oscilloscope - Musique et Informatique</title>
+    <link rel="icon" type="image/png" sizes="50x50" href="../images/onde.png">
+    
+  </head>
+    
+    <body onload="get_canvas()">
+        <!-- Navigation -->
+        <nav class="nav">
+            <ul>
+                <li class="logo"><img src="../images/note.png"></li>
+                <li>
+                    <a href="../index.html">Accueil</a>
+                </li>
+                <li>
+                    <a href="index01.html">Histoire</a>
+                </li>
+                <li>
+                    <a href="index02.html">Échantillonage</a>
+                </li>
+                <li>
+                    <a href="index03.html">Musique en ligne</a>
+                </li>
+                <li>
+                    <a href="index04.html">Oscilloscope</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Navigation Mobile -->
+        <nav role="navigation" class="nav_mobile">
+            <div id="menuToggle">
+                <input type="checkbox"/>
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul id="menu">
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="index01.html">Histoire</a></li>
+                    <li><a href="index02.html">Échantillonage</a></li>
+                    <li><a href="index03.html">Musique en ligne</a></li>
+                    <li><a href="index04.html">Oscilloscope</a></li>
+                </ul>
+           </div>
+        </nav>
+
+        <!-- Conteneur titre -->
+        <div class="encadré_titre">
+            <div class="titre">
+                <h1>Oscilloscope</h1>
+                <quote>Vous trouverez ici une simulation d'oscilloscope pour illustrer nos propos précédents...</quote>
+            </div>
+        </div>
+        <!-- Conteneur général contenu -->
+        <div class="contenu">
+            
+            <div class="oscillo">
+                <div id="controls">
+
+                    <button id="on-off" onClick="on_off()">Turn On</button>
+
+                    <div id="osc-types" class="c_select">
+            
+                        <label for="osc1-type">Oscillator 1 Type:</label>
+                        
+                        <select id="osc1-type" onchange="osc1_waveform_update(this.value)">
+                            <option value="sine">Sine</option>
+                            <option value="square">Square</option>
+                            <option value="sawtooth">Sawtooth</option>
+                            <option value="triangle">Triangle</option>
+                        </select>
+                        
+                        <label for="osc2-type">Oscillator 2 Type:</label>
+                        <select id="osc2-type" onchange="osc2_waveform_update(this.value)">
+                            <option value="sine">Sine</option>
+                            <option value="square">Square</option>
+                            <option value="sawtooth">Sawtooth</option>
+                            <option value="triangle">Triangle</option>
+                        </select
+                        ><br/>
+                    </div>
+                    
+                    <div id="osc-frequencies">
+                        <label for="osc1-frequency">Osc.1 Frequency: <span id="osc1-frequencyValue">440</span></label>
+                        <input id="osc1-frequency" type="range" min="40" max="1760" step="1" value="440" oninput="osc1_freq_update(this.value)" class="input-knob" data-bgcolor="rgb(24, 41, 49)" data-fgcolor="rgb(168, 201, 219)"/>
+                        <label for="osc2-frequency">Osc.2 Frequency: <span id="osc2-frequencyValue">440</span></label>
+                        <input id="osc2-frequency" type="range" min="40" max="1760" step="1" value="440" oninput="osc2_freq_update(this.value)" class="input-knob"data-bgcolor="rgb(24, 41, 49)" data-fgcolor="rgb(168, 201, 219)"/>
+                    </div>
+
+                    <div id="osc-gains">
+                        <label for="osc1-gain">Osc.1 Input Gain: <span id="osc1-gainValue">0.5</span></label>
+                        <input id="osc1-gain" type="range" min="0" max="1" step="0.05" value="0.5" oninput="osc1_gain_update(this.value)" class="input-knob"data-bgcolor="rgb(24, 41, 49)" data-fgcolor="rgb(168, 201, 219)"/>
+                        <label for="osc2-gain">Osc.2 Input Gain: <span id="osc2-gainValue">0.5</span></label>
+                        <input id="osc2-gain" type="range" min="0" max="1" step="0.05" value="0.5" oninput="osc2_gain_update(this.value)" class="input-knob"data-bgcolor="rgb(24, 41, 49)" data-fgcolor="rgb(168, 201, 219)"/>
+                    </div>
+                    <br>
+                    <label for="master-gain">Master Gain: <span id="master-gainValue">0.5</span></label>
+                    <input id="master-gain" type="range" min="0" max="1" step="0.05" value="0.5" oninput="master_gain_update(this.value)" class="input-knob"data-bgcolor="rgb(24, 41, 49)" data-fgcolor="rgb(168, 201, 219)"/>
+                    <br>
+                    <div id="draw_stop">
+                    <button id="draw-toggle" onclick="toggle_draw()">Toggle drawing</button>
+                    </div>
+        
+                </div>
+                <canvas id="canvas"></canvas>
+            </div>
+        </div>
+
+    </body>
+</html>
