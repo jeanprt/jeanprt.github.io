@@ -1,5 +1,5 @@
 body {
-    background-image: url('images/waveform.jpeg');
+    background-image: url('../images/waveform.jpeg');
     background-color: rgb(15, 26, 32);
     background-attachment:fixed;
     background-size: cover;
@@ -69,11 +69,7 @@ quote {
     background-color: white;
     border-radius: 18px;
 }
-@media (prefers-color-scheme: dark) {
-    .section  img {
-        background-color: rgb(18, 18, 18);
-    }
-}
+
 @media only screen and (min-device-width : 320px) and (max-device-width : 900px) {
     body {
         background-color: rgb(25, 41, 49);
