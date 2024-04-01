@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/styleNAV.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jura">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Work+Sans:400,600">
+    <title>Échantillonage - Musique et Informatique</title>
+    <link rel="icon" type="image/png" sizes="50x50" href="../images/onde.png">
+    
+  </head>
+    
+    <body>
+        <!-- Navigation -->
+        <nav class="nav">
+            <ul>
+                <li class="logo"><img src="../images/note.png"></li>
+                <li>
+                    <a href="../index.html">Accueil</a>
+                </li>
+                <li>
+                    <a href="index01.html">Histoire</a>
+                </li>
+                <li>
+                    <a href="index02.html">Échantillonage</a>
+                </li>
+                <li>
+                    <a href="index03.html">Musique en ligne</a>
+                </li>
+                <li>
+                    <a href="index04.html">Oscilloscope</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Navigation Mobile -->
+        <nav role="navigation" class="nav_mobile">
+            <div id="menuToggle">
+                <input type="checkbox"/>
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul id="menu">
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="index01.html">Histoire</a></li>
+                    <li><a href="index02.html">Échantillonage</a></li>
+                    <li><a href="index03.html">Musique en ligne</a></li>
+                    <li><a href="index04.html">Oscilloscope</a></li>
+                </ul>
+           </div>
+        </nav>
+
+        <!-- Conteneur titre -->
+        <div class="encadré_titre">
+            <div class="titre">
+                <h1>La fréquence d'échantillonnage</h1>
+                <quote>Qu'est-ce que, et pourquoi est-ce important ?</quote>
+            </div>
+        </div>
+
+        <!-- Conteneur général contenu -->
+        <div class="contenu">
+            <div class="section" id="bloc3-1">
+                <p>
+                    L'Échantillonage est une technique d'enregistrement du signal qui est basée sur le relevé d'échantillons de signal pris à intervalle régulier.
+                    Plus l'intervalle entre les échantillons est court, plus le signal est précisément enregistré.<br/><br/>
+                    L'Échantillonage n'est pas la seule technique d'enregistrement du son, il existe des enregistrements analogiques et par décomposition du signal, 
+                    mais un enregistrement analogique est impossible à représenter numériquement et un enregistrement par décomposition du signal sera de toutes façons restitué par échantillonnage car il est limité par la vitesse du processeur, qui fonctionne par étapes. <br/>
+                    On a donc retenu la technique de l'échantillonnage pour représenter les sons de manière numérique.
+                </p>
+                <img src="../images/echantillonnage.jpeg" height="300px">
+            </div>
+            <div class="section" id="bloc3-2">
+                <p>
+                    La fréquence d'échantillonnage est l'inverse de l'intevalle de temps entre la mesure deux échantillons. Elle est mesurée en Hz.
+                    De ce fait, plus la fréquence d'échantillonnage est élevée, plus l'enregistrement sera précis dans le temps, et plus l'onde enregistrée sera proche de l'onde originale.<br/>
+                    Mais la fréquence n'est pas le seul facteur déterminant la précision de l'échantillonnage: elle dépend aussi du nombre de bits sur lequel est codé chaque échantillon, de sa profondeur. 
+                    En effet, plus ce nombre est grand, plus le potentiel de l'onde au moment de l'enregistrement de l'échantillon sera enregistré précisément, et plus la restitution en sera précse.<br/>
+                    Le bitrate d'un enregistrement est la quantité d'information numérique qu'il contient, pour de l'audio, il se mesure typiquement en KB/s on peut le calculer en multipliant la fréquence d'échantillonnage par sa profondeur. 
+                    Les formats classiques comme le MP3, ont un bitrate limité, mais ce genre de format supportent la compression, qui peut être le sujet s'un autre site web à elle seule.
+                    Le bitrate de formats non compressés tels que le format .wav ont un bitrate de 1411 KB/s pour un enregistrement à 44.1 kHz de 16 bits de profondeur.
+                </p>
+                <img src="../images/Bit depth.png" height="300px"/>
+            </div>
+            <div class="section" id="bloc3-3">
+            <p>
+                Aujourd'hui, l'échantillonnage n'est pas une tâche extrèmement complexe pour nos ordinateurs, grâce au fait que l'échantillonnage soit la seule manière 
+                de réellement enregister un signal sonore l'a répandu, et aujourd'hui, tous les ordinateurs possèdent un DAC et un ADC,
+                composants électroniques qui ont pour fonctions respectives de transformer un signal numérique en analogique et vice versa.<br/>
+                La transformation analogique-numérique n'est donc pas faite de manière logicielle mais matérielle, mais dès lors qu'on traite le son, qu'on le modifie, il faut passer par un logiciel et cela peut engendrer 
+                des temps de calcul et des charges processeur conséquentes. <br/>
+                C'est pourquoi les logiciels de simulation de signaux analogiques tels que <a href="https://vcvrack.com" target="_blank">VCV Rack</a> sont très gourmands en ressources. 
+            </p>
+            <img src="../images/CPU.jpeg" height="300px">
+        </div>   
+    </body>
+</html>
