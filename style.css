@@ -51,7 +51,7 @@ body {
 /* Conteneur corps du site */
 .conteneur {
     display: flex;
-    margin-top: 20px;
+    margin-top: 31px;
     align-items: center;
     flex-direction: column;
 }
