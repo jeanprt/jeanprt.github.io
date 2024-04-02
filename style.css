@@ -8,8 +8,8 @@ body {
     display: flex;
     align-items: center;
     background-color: rgb(243, 243, 243);
-    position: fixed;
     top: 0;
+    position: sticky;
     width: 100%;
     justify-content: center;
 }
@@ -51,7 +51,7 @@ body {
 /* Conteneur corps du site */
 .conteneur {
     display: flex;
-    margin-top: 118px;
+    margin-top: 20px;
     align-items: center;
     flex-direction: column;
 }
@@ -89,7 +89,7 @@ figure {
     margin: 0.5em;
     padding: 0.5em;
 }
-img.scaled {
+.scaled {
     width: 100%;
 }
 .ListeSites a:hover {
