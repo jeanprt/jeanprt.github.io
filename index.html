@@ -9,6 +9,8 @@
         <title>Accueil - Portfolio Jean Prêtet</title>
         <!--Icône du site-->
         <link rel="icon" type="image/png" href="Musique_Et_Informatique/images/note.png">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
     </head>
 
     <body>
@@ -26,11 +28,12 @@
                 <img src="images\Jeancropped.jpg">
                 <div class="texte">
                     <h2>Bienvenue !</h2>
-                    <p>Ici vous trouverez l'aperçu de mes projets en lien avec l'audiovisuel, la musique et le developpement informatique.</p>
-                    <p>Voici la liste de  mes <a href="#">productions</a> !</p>
+                    <p>Bonjour, je suis Jean Prêtet. 
+                        <br>Passionné par l'audiovisuel, l'aviation, la musique et le développement informatique, je suis constamment à la recherche de nouveaux projets inspirants.
+                        <br>Ici vous trouverez l'aperçu de mes projets les plus aboutis</p>
                 </div>
                 
-                <div class="ListeSites" id="Projets">
+                <div class="ListeSites" id="Projets"><!-- Div ListeSites1 -->
 
                     <a href="Musique_Et_Informatique/index.html" target="_blank">
                         <figure class="pop-out">
@@ -53,20 +56,20 @@
                         </figure>
                     </a>
                     
-                </div> <!-- Fin Div ListeSites -->
-                <div class="ListeSites">
+                </div> <!-- Fin Div ListeSites1 -->
+                <div class="ListeSites"><!-- Div ListeSites2 -->
 
                     <a href="https://stgbx-nsi.github.io/" target="_blank">
                         <figure class="pop-out">
-                            <img class=scaled src="images\sitedessites.png">
+                            <img class=scaled width="412" height="212" src="images\sitedessites.png">
                             <figcaption>Site pour la spé NSI</figcaption>
                         </figure>
                     </a>
 
-                    <a href="https://philippechaix.github.io" target="_blank">
+                    <a href="https://www.youtube.com/watch?v=oAKenJlnzCA" target="_blank">
                         <figure class="pop-out">
-                            <iframe class="scaled" width="412" height="212" src="https://www.youtube.com/embed/YjVEgXXsAuk?si=0htHrgbM0uuPJsSm" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                            <figcaption>Vidéo en Allemand présentant l'école en France</figcaption>
+                            <iframe class="scaled" width="412" height="212" src="https://www.youtube.com/embed/oAKenJlnzCA?si=PuLV6X_IAqFyHm2g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <figcaption>Régie son et lumière Concert de fin d'année</figcaption>
                         </figure>
                     </a>
 
@@ -79,7 +82,51 @@
                     
                 </div> <!-- Fin Div ListeSites -->
 
+                <div id="carousel">
+                    <div><img src="chemin/vers/image1.jpg" alt="Image 1"></div>
+                    <div><img src="chemin/vers/image2.jpg" alt="Image 2"></div>
+                    <div><img src="chemin/vers/image3.jpg" alt="Image 3"></div>
+                    <!-- Ajoutez autant d'images que vous le souhaitez -->
+                </div>
+                
+                <!-- Section Contact -->
+                <section id="Contact" class="cadre gris"><!-- Section Contact -->
+
+                    <!-- À propos de moi -->
+                    <div class="liste">
+                        <h2>À propos de moi</h2>
+                        <p>Bonjour, je suis Jean Prêtet. Passionné par l'audiovisuel, la musique et le développement informatique, je suis constamment à la recherche de nouveaux projets inspirants. N'hésitez pas à me contacter pour toute question ou proposition de collaboration.</p>
+                    </div>
+    
+                    <!-- Coordonnées -->
+                    <div class="liste">
+                        <h2>Contact</h2>
+                        <p>N'hésitez pas à me contacter :</p>
+                        <p>Email : <a href="mailto:jean.pretet@gmail.com">jean.pretet@gmail.com</a></p>
+                    </div>
+                    <br>
+                    <footer>
+                        ©JeanPrêtet2024. Ce site a été entierement créé par mes soins, tout en ligne de codes...
+                        <br>Un petit tour sur la <a href="404.html">page 404 ?</a>
+                    </footer>
+                </section> <!-- Fin Section Contact -->
+
             </div> <!-- Fin Div Conteneur -->
+
+            <!-- Scripts JavaScript -->
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+            <script>
+                $(document).ready(function(){
+                    $('#carousel').slick({
+                        autoplay: true,
+                        autoplaySpeed: 2000, // Durée de défilement entre les images (en millisecondes)
+                        arrows: true, // Afficher les flèches de navigation
+                        dots: true // Afficher les indicateurs de pagination
+                    });
+                });
+            </script>
+            
     </body>
-    <footer> <t>© Jean Prêtet, </t>Ce site a été entierement créé par mes soins, tout en ligne de codes...</a></footer>
+    
 </html>

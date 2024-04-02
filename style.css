@@ -38,7 +38,7 @@ body {
     cursor: pointer;
 }
 .button:active {
-    background-color: rgb(237, 177, 16);
+    background-color: rgba(237, 182, 22, 1);
 }
 
 .texte-titre {
@@ -62,7 +62,7 @@ body {
     flex-direction: column;
     text-align: center;
 }
-.texte h2 {
+h2 {
     font-family: Space Grotesk;
 }
 .texte p {
@@ -137,15 +137,6 @@ figure {
     width: 100%;
     text-align: center;
 }
-.liste a:hover {
-    color: inherit;
-}
-.blanc:hover, .gris:hover{
-    background-color: rgba(230, 230, 230, 0.8);
-}
-.blanc:active, .gris:active {
-    background-color: rgba(245, 214, 132, 0.8);;
-}
 
 /* Footer */
 footer {
@@ -158,17 +149,17 @@ a:any-link{
 }
     
 a:hover{
-    color: rgb(237, 177, 16);
+    color: rgb(237, 182, 22);
 }
 
 /* Sélection du curseur */
 ::selection {
-    background-color : rgb(237, 177, 16);
+    background-color : rgba(237, 182, 22, 0.8);
     color : #fff
 }
 
 ::-moz-selection {
-    background-color : rgb(237, 177, 16);
+    background-color : rgba(237, 182, 22, 0.8);
     color : #fff
 }
 
