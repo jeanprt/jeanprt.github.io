@@ -176,11 +176,14 @@ a:hover{
         flex-direction: column;
     }
     .pop-out{
-        transition: transform .5s;
         padding: 20px;
         width: 800px;
         max-height: 500px;
         object-fit: contain;
+    }
+    .pop-out:hover{
+        transform: none;
+        transition: none;
     }
     figure {
         font-size: 2em;
