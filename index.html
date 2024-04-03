@@ -3,14 +3,13 @@
     <head>
         <meta charset="utf-8">
         <!-- Liens feuilles de style -->
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/style.css">
         <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
         <!-- Titre de la Page -->
         <title>Accueil - Portfolio Jean Prêtet</title>
         <!--Icône du site-->
         <link rel="icon" type="image/png" href="Musique_Et_Informatique/images/note.png">
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+        <link rel="stylesheet" href="css/caroussel.css"/>
     </head>
 
     <body>
@@ -37,7 +36,7 @@
 
                     <a href="Musique_Et_Informatique/index.html" target="_blank">
                         <figure class="pop-out">
-                            <img class=scaled src="https://stgbx-nsi.github.io/images/site_jean_paul.png">
+                            <img class=scaled width="412" height="212" src="https://stgbx-nsi.github.io/images/site_jean_paul.png">
                             <figcaption>Site réalisé en spé NSI : Musique et Informatique</figcaption>
                         </figure>
                     </a>
@@ -73,22 +72,17 @@
                         </figure>
                     </a>
 
-                    <a href="https://www.youtube.com/watch?v=2HoUD3ZdZUE" target="_blank">
+                    <a href="https://www.youtube.com/watch?v=YQoNUw72-NA target="_blank">
                         <figure class="pop-out">
                             <iframe class="scaled" width="412" height="212" src="https://www.youtube.com/embed/2HoUD3ZdZUE?si=8b1Uz-2SpJ0vhZ48" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                            <figcaption>Vidéo pour le CNRD 2021</figcaption>
+                            <figcaption>Régie live : rediffusion d'un concert en live en autonomie</figcaption>
                         </figure>
                     </a>
                     
                 </div> <!-- Fin Div ListeSites -->
 
-                <div id="carousel">
-                    <div><img src="chemin/vers/image1.jpg" alt="Image 1"></div>
-                    <div><img src="chemin/vers/image2.jpg" alt="Image 2"></div>
-                    <div><img src="chemin/vers/image3.jpg" alt="Image 3"></div>
-                    <!-- Ajoutez autant d'images que vous le souhaitez -->
-                </div>
-                
+                <img style="margin-top: 40px;" width="500px" src="images/helico.JPG">
+
                 <!-- Section Contact -->
                 <section id="Contact" class="cadre gris"><!-- Section Contact -->
 
@@ -112,21 +106,6 @@
                 </section> <!-- Fin Section Contact -->
 
             </div> <!-- Fin Div Conteneur -->
-
-            <!-- Scripts JavaScript -->
-            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-            <script>
-                $(document).ready(function(){
-                    $('#carousel').slick({
-                        autoplay: true,
-                        autoplaySpeed: 2000, // Durée de défilement entre les images (en millisecondes)
-                        arrows: true, // Afficher les flèches de navigation
-                        dots: true // Afficher les indicateurs de pagination
-                    });
-                });
-            </script>
-            
     </body>
     
 </html>
