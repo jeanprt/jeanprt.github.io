@@ -96,7 +96,7 @@ figure {
     object-fit: cover;
 }
 .ListeSites a:hover {
-    color: black;
+    color: rgb(237, 182, 22);
 }
 
 /* Zoom sur images */
@@ -130,17 +130,18 @@ figure {
     align-items: center;
     width: 1000px;
 }
-.blanc {
-    background-color: white;
-    width: 100%;
-    text-align: center;
-}
 .gris {
     background-color: rgb(245, 245, 245);
     width: 100%;
     text-align: center;
 }
 
+/* Icônes Titres */
+.icon img {
+    margin-right: 0.5em;
+    width: 40px;
+    vertical-align: middle;
+}
 /* Footer */
 footer {
     font-family: Space Grotesk;
