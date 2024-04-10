@@ -12,6 +12,7 @@ body {
     position: sticky;
     width: 100%;
     justify-content: center;
+    z-index: 1;
 }
 .logo {
     margin: 10px;
@@ -145,6 +146,54 @@ figure {
 /* Footer */
 footer {
     font-family: Space Grotesk;
+}
+
+/* Caroussel */
+.caroussel {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-top: 40px;
+    height: auto;
+    color: black;
+    font-size: 20px;
+    height: 360px; width: 640px;
+    overflow: hidden;
+    padding-bottom: 50px;
+    border: thin solid rgb(144, 144, 144);
+}
+.photos{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    height: 360px;
+    width:640px;
+    animation: caroussel 15s infinite;
+}
+
+.photos p{
+    font-family: Space Grotesk;
+    font-size: 0.9em;
+}
+@keyframes caroussel {
+    0% {transform: translateX(0px)}
+    10% {transform: translateX(0px)}
+    12.5% {transform: translateX(-640px)}
+    22.5% {transform: translateX(-640px)}
+    25% {transform: translateX(-1280px)}
+    35% {transform: translateX(-1280px)}
+    37.5% {transform: translateX(-1920px)}
+    47.5% {transform: translateX(-1920px)}
+    50% {transform: translateX(-2560px)}
+    60% {transform: translateX(-2560px)}
+    62.5% {transform: translateX(-3200px)}
+    72.5% {transform: translateX(-3200px)}
+    75% {transform: translateX(-3840px)}
+    85% {transform: translateX(-3840px)}
+    87.5% {transform: translateX(-4480px)}
+    97.5% {transform: translateX(-4480px)}
+    100% {transform: translateX(0px)}
 }
 
 /* Liens */
