@@ -62,6 +62,8 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 h2 {
     font-family: Space Grotesk;
@@ -149,7 +151,7 @@ footer {
 }
 
 /* Caroussel */
-.caroussel {
+.carroussel {
     display: flex;
     flex-direction: row;
     margin: auto;
@@ -169,31 +171,36 @@ footer {
     align-items: center;
     height: 360px;
     width:640px;
-    animation: caroussel 15s infinite;
+    animation: carroussel 30s infinite;
 }
 
 .photos p{
     font-family: Space Grotesk;
     font-size: 0.9em;
 }
-@keyframes caroussel {
-    0% {transform: translateX(0px)}
-    10% {transform: translateX(0px)}
-    12.5% {transform: translateX(-640px)}
-    22.5% {transform: translateX(-640px)}
-    25% {transform: translateX(-1280px)}
-    35% {transform: translateX(-1280px)}
-    37.5% {transform: translateX(-1920px)}
-    47.5% {transform: translateX(-1920px)}
-    50% {transform: translateX(-2560px)}
-    60% {transform: translateX(-2560px)}
-    62.5% {transform: translateX(-3200px)}
-    72.5% {transform: translateX(-3200px)}
-    75% {transform: translateX(-3840px)}
-    85% {transform: translateX(-3840px)}
-    87.5% {transform: translateX(-4480px)}
-    97.5% {transform: translateX(-4480px)}
-    100% {transform: translateX(0px)}
+@keyframes carroussel {
+    0% { transform: translateX(0px) }
+    4% { transform: translateX(0px) }
+    8% { transform: translateX(-640px) }
+    12% { transform: translateX(-640px) }
+    16% { transform: translateX(-1280px) }
+    18% { transform: translateX(-1280px) }
+    22% { transform: translateX(-1920px) }
+    26% { transform: translateX(-1920px) }
+    30% { transform: translateX(-2560px) }
+    34% { transform: translateX(-2560px) }
+    38% { transform: translateX(-3200px) }
+    42% { transform: translateX(-3200px) }
+    46% { transform: translateX(-3840px) }
+    50% { transform: translateX(-3840px) }
+    54% { transform: translateX(-4480px) }
+    58% { transform: translateX(-4480px) }
+    62% { transform: translateX(-5120px) }
+    66% { transform: translateX(-5120px) }
+    70% { transform: translateX(-5760px) }
+    74% { transform: translateX(-5760px) }
+    78% { transform: translateX(0px) }
+    100% { transform: translateX(0px) }
 }
 
 /* Liens */
