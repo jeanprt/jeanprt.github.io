@@ -10,7 +10,6 @@
     <title>Page Protégée</title>
     <!-- Icône du site -->
     <link rel="icon" type="image/png" href="../images/chant-02.png">
-    <script src="secret.js"></script>
 </head>
 <body>
     <div class="container">
@@ -21,25 +20,27 @@
         <button onclick="checkPassword()">Valider</button>
     </div>
     <script>
-        const PROTECTED_PASSWORD = "PLACEHOLDER_PASSWORD";
-    </script>
-    <script>
         console.log("Mot de passe injecté :", window.PROTECTED_PASSWORD);
         function handleKeyDown(event) {
             if (event.key === "Enter") {
                 checkPassword();
             }
         }
+
+        function generateToken() {
+            return Math.random().toString(36).substr(2); // Génère un token unique
+        }
+
         function checkPassword() {
-            const correctPassword = window.PROTECTED_PASSWORD;
+            const correctPassword = atob("MjcvMDIvMjAyMg==");
             const inputPassword = document.getElementById('password').value;
             if (inputPassword === correctPassword) {
-                const protectedContent = '<h1 style="font-family: Space Grotesk"> Tu as trouvé le mot de passe ! </h1>';
-                document.body.innerHTML = protectedContent;
+                const token = generateToken(); // Génère un token unique
+                window.location.href = `lj.html?token=${token}`;
             } else {
                 alert("Mot de passe incorrect !");
-    }
-}
+            }
+        }
     </script>
 </body>
 </html>

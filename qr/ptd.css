@@ -46,3 +46,31 @@ button {
 button:hover {
     background-color: rgb(216, 164, 6);
 }
+
+h1 {
+    font-family: Space Grotesk;
+    text-align: center;
+}
+
+/* Version mobile */
+@media only screen and (min-device-width : 320px) and (max-device-width : 900px) {
+    .container {
+        padding: 15px;
+        width: 90%;
+        max-width: 350px;
+    }
+
+    input[type="password"] {
+        font-size: 1.1em;
+        padding: 12px;
+    }
+
+    button {
+        font-size: 1.2em;
+        padding: 12px 25px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+}
