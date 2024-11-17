@@ -10,6 +10,7 @@
     <title>Page Protégée</title>
     <!-- Icône du site -->
     <link rel="icon" type="image/png" href="../images/chant-02.png">
+    <script src="secret.js"></script>
 </head>
 <body>
     <div class="container">
@@ -19,8 +20,11 @@
         <input type="password" id="password" placeholder="Mot de passe" onkeydown="handleKeyDown(event)">
         <button onclick="checkPassword()">Valider</button>
     </div>
-    <script src="secret.js"></script>
     <script>
+        const PROTECTED_PASSWORD = "PLACEHOLDER_PASSWORD";
+    </script>
+    <script>
+        console.log("Mot de passe injecté :", window.PROTECTED_PASSWORD);
         function handleKeyDown(event) {
             if (event.key === "Enter") {
                 checkPassword();
@@ -28,7 +32,6 @@
         }
         function checkPassword() {
             const correctPassword = window.PROTECTED_PASSWORD;
-
             const inputPassword = document.getElementById('password').value;
             if (inputPassword === correctPassword) {
                 const protectedContent = '<h1 style="font-family: Space Grotesk"> Tu as trouvé le mot de passe ! </h1>';
