@@ -13,10 +13,13 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Inject secret
+      - name: Créer le dossier public
+        run: mkdir -p ./public
+
+      - name: Injecter le secret
         run: echo "window.PROTECTED_PASSWORD = '${{ secrets.PROTECTED_PASSWORD }}';" > ./public/secret.js
 
-      - name: Deploy to GitHub Pages
+      - name: Déployer sur GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
