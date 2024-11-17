@@ -16,11 +16,16 @@
         <h1>Page protégée</h1>
         <p>Veuillez entrer le mot de passe pour accéder au contenu.</p>
         <a href="../404.html">Perdu.e ?</a>
-        <input type="password" id="password" placeholder="Mot de passe">
+        <input type="password" id="password" placeholder="Mot de passe" onkeydown="handleKeyDown(event)">
         <button onclick="checkPassword()">Valider</button>
     </div>
     <script src="secret.js"></script>
     <script>
+        function handleKeyDown(event) {
+            if (event.key === "Enter") {
+                checkPassword();
+            }
+        }
         function checkPassword() {
             const correctPassword = window.PROTECTED_PASSWORD;
 
