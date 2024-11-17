@@ -19,20 +19,19 @@
         <input type="password" id="password" placeholder="Mot de passe">
         <button onclick="checkPassword()">Valider</button>
     </div>
-
+    <script src="secret.js"></script>
     <script>
         function checkPassword() {
-            const correctPassword = atob("MjcvMDIvMjAyMg==");
+            const correctPassword = window.PROTECTED_PASSWORD;
 
             const inputPassword = document.getElementById('password').value;
             if (inputPassword === correctPassword) {
-                const protectedContent = 'Tu as trouvé le mot de passe !';
-                // Remplacer le contenu de la page
+                const protectedContent = '<h1 style="font-family: Space Grotesk"> Tu as trouvé le mot de passe ! </h1>';
                 document.body.innerHTML = protectedContent;
             } else {
                 alert("Mot de passe incorrect !");
-            }
-        }
+    }
+}
     </script>
 </body>
 </html>
