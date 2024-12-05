@@ -1,0 +1,66 @@
+@font-face {
+    font-family: Shintaku;
+    src: url("./fonts/Shintaku.otf");
+}
+
+body {
+    background-color: rgb(25,85,106);
+    margin: 0;
+}
+
+.en_tete {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.logo {
+    margin: 10px;
+}
+
+.bouttons {
+    display: flex;
+    margin: 10px;
+}
+
+.button1 {
+    font-family: Shintaku;
+    font-size: 1em;
+    background-color: white;
+    color: black;
+    padding: 8px 16px;
+    border: 2px solid black;
+    margin: 7px;
+}
+
+.button1:hover {
+    background-color: #ccba6f;
+    color: white;
+    cursor: pointer;
+}
+a:any-link{
+    color: inherit;
+}
+    
+a:hover{
+    color: black;
+}
+
+.section0 {
+    position: relative;
+    text-align: center;
+}
+
+.titre {
+    font-family: Shintaku;
+    color:white;
+    font-size: 2em;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

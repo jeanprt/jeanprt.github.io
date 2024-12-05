@@ -1,0 +1,125 @@
+@font-face {
+    font-family: Shintaku;
+    src: url("./fonts/Shintaku.otf");
+}
+
+body {
+    background-color: rgb(25,85,106);
+    margin: 0
+}
+
+.en_tete {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.logo {
+    margin: 10px;
+}
+
+.bouttons {
+    display: flex;
+    margin: 10px;
+}
+
+.button1 {
+    font-family: Shintaku;
+    font-size: 1em;
+    background-color: white;
+    color: black;
+    padding: 8px 16px;
+    border: 2px solid black;
+    margin: 7px;
+}
+
+.button1:hover {
+    background-color: #ccba6f;
+    color: white;
+    cursor: pointer;
+}
+a:any-link{
+    color: inherit;
+}
+    
+a:hover{
+    color: black;
+}
+
+.texte-titre {
+    font-family: Oswald;
+    color: rgb(170,170,170);
+    margin: 10px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.2em;
+}
+.conteneur {
+    margin-top: 150px;
+}
+.section0 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+}
+
+#logo1 {
+    margin: 10px;
+}
+
+#texte-droite-intro {
+    font-family: Oswald;
+    color: white;
+    margin: 10px;
+    text-align: center;
+}
+
+
+.titre-une {
+    font-family: Oswald;
+    color: grey;
+    text-align: center;
+    background-color: white;
+    position: relative;
+}
+
+.section1 {
+    font-family: Oswald;
+    color: grey;
+    display: flex;
+    padding: 50px;
+    flex-basis: 33%;
+}
+
+.infos {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin: 5px;
+    padding: 10px;
+}
+
+#boite-liens {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    padding: 10px;
+}
+
+.liens {
+    font-size: 1.6em;
+    font-family: Oswald;
+    background-color: white;
+    color: #ccba6f;
+    margin: 5px;
+    padding: 10px;
+}

@@ -1,0 +1,247 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* En Tête Fixe */
+.en_tete {
+    display: flex;
+    align-items: center;
+    background-color: rgb(243, 243, 243);
+    top: 0;
+    position: sticky;
+    width: 100%;
+    justify-content: center;
+    z-index: 1;
+}
+.logo {
+    margin: 10px;
+}
+.logo:active {
+    background-color: white;
+}
+.bouttons {
+    display: flex;
+    margin: 10px;
+}
+.button {
+    font-family: Space Grotesk;
+    font-size: 1em;
+    background-color: white;
+    color: black;
+    padding: 8px 16px;
+    border: 2px solid black;
+    margin: 7px;
+}
+.button:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.button:active {
+    background-color: rgba(237, 182, 22, 1);
+}
+
+.texte-titre {
+    font-family: Oswald;
+    color: rgb(170,170,170);
+    margin: 10px;
+    text-align: center;
+}
+
+/* Conteneur corps du site */
+.conteneur {
+    display: flex;
+    margin-top: 31px;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Texte introductif */
+.texte {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+h2 {
+    font-family: Space Grotesk;
+}
+.texte p {
+    font-family: Arial;
+    margin: 5px;
+}
+
+/* Liste des Sites */
+.ListeSites {
+    display: flex;
+    padding-top: 30px;
+    justify-content: center;
+    flex-direction: row;
+}
+
+/* Images + sous-titres */
+figure {
+    float: right;
+    text-align: center;
+    font-family: Space Grotesk;
+    font-style: italic;
+    font-size: smaller;
+    border: thin silver solid;
+    margin: 0.5em;
+    padding: 0.5em;
+}
+.scaled {
+    width: 100%;
+    width: 412;
+    height: 212;
+    object-fit: cover;
+}
+.ListeSites a:hover {
+    color: rgb(237, 182, 22);
+}
+
+/* Zoom sur images */
+.pop-out{
+    transition: transform .5s;
+    padding: 5px;
+    width: 400px;
+    max-height: 250px;
+    object-fit: contain;
+}
+.pop-out:hover{
+    -ms-transform: scale(1.25, 1.25);
+    -webkit-transform: scale(1.25, 1.25);
+    transform: scale(1.25, 1.25); 
+}
+
+/* Liste page 2 */
+.cadre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1100px;
+    margin-top: 40px;
+    padding: 30px;
+    background-color: rgb(250, 250, 250);
+    font-family: Space Grotesk;
+}
+.liste {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1000px;
+}
+.gris {
+    background-color: rgb(245, 245, 245);
+    width: 100%;
+    text-align: center;
+}
+
+/* Icônes Titres */
+.icon img {
+    margin-right: 0.5em;
+    width: 40px;
+    vertical-align: middle;
+}
+/* Footer */
+footer {
+    font-family: Space Grotesk;
+}
+
+/* Caroussel */
+.carroussel {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-top: 40px;
+    height: auto;
+    color: black;
+    font-size: 20px;
+    height: 360px; width: 640px;
+    overflow: hidden;
+    padding-bottom: 50px;
+    border: thin solid rgb(144, 144, 144);
+}
+.photos{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    height: 360px;
+    width:640px;
+    animation: carroussel 30s infinite;
+}
+
+.photos p{
+    font-family: Space Grotesk;
+    font-size: 0.9em;
+}
+@keyframes carroussel {
+    0% { transform: translateX(0px) }
+    4% { transform: translateX(0px) }
+    8% { transform: translateX(-640px) }
+    12% { transform: translateX(-640px) }
+    16% { transform: translateX(-1280px) }
+    18% { transform: translateX(-1280px) }
+    22% { transform: translateX(-1920px) }
+    26% { transform: translateX(-1920px) }
+    30% { transform: translateX(-2560px) }
+    34% { transform: translateX(-2560px) }
+    38% { transform: translateX(-3200px) }
+    42% { transform: translateX(-3200px) }
+    46% { transform: translateX(-3840px) }
+    50% { transform: translateX(-3840px) }
+    54% { transform: translateX(-4480px) }
+    58% { transform: translateX(-4480px) }
+    62% { transform: translateX(-5120px) }
+    66% { transform: translateX(-5120px) }
+    70% { transform: translateX(-5760px) }
+    74% { transform: translateX(-5760px) }
+    78% { transform: translateX(0px) }
+    100% { transform: translateX(0px) }
+}
+
+/* Liens */
+a:any-link{
+    color: inherit;
+}
+    
+a:hover{
+    color: rgb(237, 182, 22);
+}
+
+/* Sélection du curseur */
+::selection {
+    background-color : rgba(237, 182, 22, 0.8);
+    color : #fff
+}
+
+::-moz-selection {
+    background-color : rgba(237, 182, 22, 0.8);
+    color : #fff
+}
+
+/* Version mobile */
+@media only screen and (min-device-width : 320px) and (max-device-width : 900px) {
+    .button {
+        font-size: 2em;
+    }
+    .ListeSites {
+        flex-direction: column;
+    }
+    .pop-out{
+        padding: 20px;
+        width: 800px;
+        max-height: 500px;
+        object-fit: contain;
+    }
+    .pop-out:hover{
+        transform: none;
+        transition: none;
+    }
+    figure {
+        font-size: 2em;
+    }
+}
