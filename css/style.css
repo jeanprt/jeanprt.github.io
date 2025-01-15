@@ -149,7 +149,10 @@ figure {
 footer {
     font-family: Space Grotesk;
 }
-
+/* Liste */
+ul li {
+    font-family: Space Grotesk;
+}
 /* Caroussel */
 .carroussel {
     display: flex;
