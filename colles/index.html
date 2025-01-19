@@ -27,28 +27,42 @@
                     <li>Si le colloscope est modifié, les changements seront automatiques sous 24h (délais imposé par Google).</li>
                     <li> Si vous n'y parvenez pas, visitez <a href="https://support.google.com/calendar/answer/37100?hl=fr&co=GENIE.Platform%3DDesktop" target="_blank">https://support.google.com/calendar/answer/37100</a>.</li>
                 </ul>
-                Version mise à jour le 15/01/2025 (V12).
+                Version mise à jour le 19/01/2025 (V12).
             </p>
         </div>
 
+        <script>
+            const AddUrl = 'https://calendar.google.com/calendar/u/0/r/settings/addbyurl'; // Définir l'URL dans une variable
+            function CP(texte) {
+                navigator.clipboard.writeText(texte).then(() => {
+                    alert("Lien copié dans le presse-papiers !");
+                    window.location.href = AddUrl; // Utiliser la variable
+                }).catch(err => {
+                    console.error("Erreur lors de la copie :", err);
+                });
+            }
+        </script>
+
         <div class="cadre">
             <div class="liste">
-                <div class="blanc"><p>Groupe 1 : https://jeanprt.github.io/colles/Colles%20groupe%201.ics</p></div>
-                <div class="gris"><p>Groupe 2 : https://jeanprt.github.io/colles/Colles%20groupe%202.ics</p></div>
-                <div class="blanc"><p>Groupe 3 : https://jeanprt.github.io/colles/Colles%20groupe%203.ics</p></div>
-                <div class="gris"><p>Groupe 4 : https://jeanprt.github.io/colles/Colles%20groupe%204.ics</p></div>
-                <div class="blanc"><p>Groupe 5 : https://jeanprt.github.io/colles/Colles%20groupe%205.ics</p></div>
-                <div class="gris"><p>Groupe 6 : https://jeanprt.github.io/colles/Colles%20groupe%206.ics</p></div>
-                <div class="blanc"><p>Groupe 7 : https://jeanprt.github.io/colles/Colles%20groupe%207.ics</p></div>
-                <div class="gris"><p>Groupe 8 : https://jeanprt.github.io/colles/Colles%20groupe%208.ics</p></div>
-                <div class="blanc"><p>Groupe 9 : https://jeanprt.github.io/colles/Colles%20groupe%209.ics</p></div>
-                <div class="gris"><p>Groupe 10 : https://jeanprt.github.io/colles/Colles%20groupe%2010.ics</p></div>
-                <div class="blanc"><p>Groupe 11 : https://jeanprt.github.io/colles/Colles%20groupe%2011.ics</p></div>
-                <div class="gris"><p>Groupe 12 : https://jeanprt.github.io/colles/Colles%20groupe%2012.ics</p></div>
-                <div class="blanc"><p>Groupe 13 : https://jeanprt.github.io/colles/Colles%20groupe%2013.ics</p></div>
-                <div class="gris"><p>Groupe 14 : https://jeanprt.github.io/colles/Colles%20groupe%2014.ics</p></div>
-                <div class="blanc"><p>Groupe 15 : https://jeanprt.github.io/colles/Colles%20groupe%2015.ics</p></div>
-                <div class="gris"><p>Groupe 16 : https://jeanprt.github.io/colles/Colles%20groupe%2016.ics</p></div>
+                <div class="blanc"><p><a href="javascript:void(0)" onclick="CP('Groupe 1 : https://jeanprt.github.io/colles/Colles%20groupe%201.ics')">Groupe 1 : https://jeanprt.github.io/colles/Colles%20groupe%201.ics</a></p></div>
+                <div class="gris"><p><a href="javascript:void(0)" onclick="CP('Groupe 2 : https://jeanprt.github.io/colles/Colles%20groupe%202.ics')">Groupe 2 : https://jeanprt.github.io/colles/Colles%20groupe%202.ics</a></p></div>
+                <div class="blanc"><p><a href="javascript:void(0)" onclick="CP('Groupe 3 : https://jeanprt.github.io/colles/Colles%20groupe%203.ics')">Groupe 3 : https://jeanprt.github.io/colles/Colles%20groupe%203.ics</a></p></div>
+                <div class="gris"><p><a href="javascript:void(0)" onclick="CP('Groupe 4 : https://jeanprt.github.io/colles/Colles%20groupe%204.ics')">Groupe 4 : https://jeanprt.github.io/colles/Colles%20groupe%204.ics</a></p></div>
+                <div class="blanc"><p><a href="javascript:void(0)" onclick="CP('Groupe 5 : https://jeanprt.github.io/colles/Colles%20groupe%205.ics')">Groupe 5 : https://jeanprt.github.io/colles/Colles%20groupe%205.ics</a></p></div>
+                <div class="gris"><p><a href="javascript:void(0)" onclick="CP('Groupe 6 : https://jeanprt.github.io/colles/Colles%20groupe%206.ics')">Groupe 6 : https://jeanprt.github.io/colles/Colles%20groupe%206.ics</a></p></div>
+                <div class="blanc"><p><a href="javascript:void(0)" onclick="CP('Groupe 7 : https://jeanprt.github.io/colles/Colles%20groupe%207.ics')">Groupe 7 : https://jeanprt.github.io/colles/Colles%20groupe%207.ics</a></p></div>
+                <div class="gris"><p><a href="javascript:void(0)" onclick="CP('Groupe 8 : https://jeanprt.github.io/colles/Colles%20groupe%208.ics')">Groupe 8 : https://jeanprt.github.io/colles/Colles%20groupe%208.ics</a></p></div>
+                <div class="blanc"><p><a href="javascript:void(0)" onclick="CP('Groupe 9 : https://jeanprt.github.io/colles/Colles%20groupe%209.ics')">Groupe 9 : https://jeanprt.github.io/colles/Colles%20groupe%209.ics</a></p></div>
+                <div class="gris"><p><a href="javascript:void(0)" onclick="CP('Groupe 10 : https://jeanprt.github.io/colles/Colles%20groupe%2010.ics')">Groupe 10 : https://jeanprt.github.io/colles/Colles%20groupe%2010.ics</a></p></div>
+                <div class="blanc"><p><a href="javascript:void(0)" onclick="CP('Groupe 11 : https://jeanprt.github.io/colles/Colles%20groupe%2011.ics')">Groupe 11 : https://jeanprt.github.io/colles/Colles%20groupe%2011.ics</a></p></div>
+                <div class="gris"><p><a href="javascript:void(0)" onclick="CP('Groupe 12 : https://jeanprt.github.io/colles/Colles%20groupe%2012.ics')">Groupe 12 : https://jeanprt.github.io/colles/Colles%20groupe%2012.ics</a></p></div>
+                <div class="blanc"><p><a href="javascript:void(0)" onclick="CP('Groupe 13 : https://jeanprt.github.io/colles/Colles%20groupe%2013.ics')">Groupe 13 : https://jeanprt.github.io/colles/Colles%20groupe%2013.ics</a></p></div>
+                <div class="gris"><p><a href="javascript:void(0)" onclick="CP('Groupe 14 : https://jeanprt.github.io/colles/Colles%20groupe%2014.ics')">Groupe 14 : https://jeanprt.github.io/colles/Colles%20groupe%2014.ics</a></p></div>
+                <div class="blanc"><p><a href="javascript:void(0)" onclick="CP('Groupe 15 : https://jeanprt.github.io/colles/Colles%20groupe%2015.ics')">Groupe 15 : https://jeanprt.github.io/colles/Colles%20groupe%2015.ics</a></p></div>
+                <div class="gris"><p><a href="javascript:void(0)" onclick="CP('Groupe 16 : https://jeanprt.github.io/colles/Colles%20groupe%2016.ics')">Groupe 16 : https://jeanprt.github.io/colles/Colles%20groupe%2016.ics</a></p></div>
+
+
             </div>
 
         </div>
