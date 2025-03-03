@@ -5,7 +5,7 @@
     <!-- Liens feuilles de style -->
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="ptd.css">
+    <link rel="stylesheet" href="../qr/ptd.css">
     <!-- Titre de la Page -->
     <title>Page Protégée</title>
     <!-- Icône du site -->
@@ -32,11 +32,11 @@
         }
 
         function checkPassword() {
-            const correctPassword = atob("MjcvMDIvMjAyMg==");
+            const correctPassword = atob("MTYvMTAvMjAwNg==");
             const inputPassword = document.getElementById('password').value;
             if (inputPassword === correctPassword) {
                 const token = generateToken(); // Génère un token unique
-                window.location.href = `lj.html?token=${token}`;
+                window.location.href = `portfolio.html?token=${token}`;
             } else {
                 alert("Mot de passe incorrect !");
             }
