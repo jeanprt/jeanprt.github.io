@@ -52,7 +52,6 @@ body {
     font-family: Space Grotesk, arial, sans-serif;
     text-decoration: none;
     cursor: pointer;
-    font-weight: bold;
 }
 .content button:hover {
     background-color:rgb(237, 182, 22);
