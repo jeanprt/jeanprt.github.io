@@ -250,3 +250,17 @@ a:hover{
         font-size: 2em;
     }
 }
+
+/* Mode Sombre */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: rgb(43,43,43);
+        color: #fff;
+    }
+    .cadre, .en_tete{
+        background-color: rgb(93, 93, 93);
+    }
+    .gris {
+        background-color: rgb(132, 132, 132);
+    }
+}
