@@ -60,18 +60,18 @@ SUMMARY:DS4 ITC 🖥️
 END:VEVENT
 
 BEGIN:VEVENT
-UID:ds6-sii-20250105@colles
+UID:ds6-sii-20260105@colles
 DTSTAMP:20250906T120000Z
-DTSTART;TZID=Europe/Paris:20250105T140000
-DTEND;TZID=Europe/Paris:20250105T160000
+DTSTART;TZID=Europe/Paris:20260105T140000
+DTEND;TZID=Europe/Paris:20260105T160000
 SUMMARY:DS6 SII ⚙️
 END:VEVENT
 
 BEGIN:VEVENT
-UID:ds3-itc-20250119@colles
+UID:ds3-itc-20260119@colles
 DTSTAMP:20250906T120000Z
-DTSTART;TZID=Europe/Paris:20250119T120000
-DTEND;TZID=Europe/Paris:20250119T130000
+DTSTART;TZID=Europe/Paris:20260119T120000
+DTEND;TZID=Europe/Paris:20260119T130000
 SUMMARY:DS3 ITC 🖥️
 END:VEVENT
 
@@ -133,67 +133,140 @@ SUMMARY:DS5 Maths 🧮
 END:VEVENT
 
 BEGIN:VEVENT
-UID:ds6-maths-20250117@colles
+UID:ds6-maths-20260117@colles
 DTSTAMP:20250906T120000Z
-DTSTART;TZID=Europe/Paris:20250117T080000
-DTEND;TZID=Europe/Paris:20250117T120000
+DTSTART;TZID=Europe/Paris:20260117T080000
+DTEND;TZID=Europe/Paris:20260117T120000
 SUMMARY:DS6 Maths 🧮
 END:VEVENT
 
 BEGIN:VEVENT
-UID:ds7-sia-20250130@colles
+UID:ds7-sia-20260130@colles
 DTSTAMP:20250906T120000Z
-DTSTART;TZID=Europe/Paris:20250130T130000
-DTEND;TZID=Europe/Paris:20250130T180000
+DTSTART;TZID=Europe/Paris:20260130T130000
+DTEND;TZID=Europe/Paris:20260130T180000
 SUMMARY:DS7 SIA ⚙️
 END:VEVENT
 
 BEGIN:VEVENT
-UID:ds7-maths-20250206@colles
+UID:ds7-maths-20260206@colles
 DTSTAMP:20250906T120000Z
-DTSTART;TZID=Europe/Paris:20250206T160000
-DTEND;TZID=Europe/Paris:20250206T190000
+DTSTART;TZID=Europe/Paris:20260206T160000
+DTEND;TZID=Europe/Paris:20260206T190000
 SUMMARY:DS7 Maths 🧮
 END:VEVENT
 
 BEGIN:VEVENT
-UID:ds-anglais-20250307@colles
+UID:ds-anglais-20260307@colles
 DTSTAMP:20250906T120000Z
-DTSTART;TZID=Europe/Paris:20250307T080000
-DTEND;TZID=Europe/Paris:20250307T120000
+DTSTART;TZID=Europe/Paris:20260307T080000
+DTEND;TZID=Europe/Paris:20260307T120000
 SUMMARY:DS Anglais 🇬🇧
 END:VEVENT
 
 BEGIN:VEVENT
-UID:ds8-sic-20250320@colles
+UID:ds8-sic-20260320@colles
 DTSTAMP:20250906T120000Z
-DTSTART;TZID=Europe/Paris:20250320T130000
-DTEND;TZID=Europe/Paris:20250320T190000
+DTSTART;TZID=Europe/Paris:20260320T130000
+DTEND;TZID=Europe/Paris:20260320T190000
 SUMMARY:DS8 SIC ⚙️
 END:VEVENT
 
 BEGIN:VEVENT
-UID:ds8-maths-20250314@colles
+UID:ds8-maths-20260314@colles
 DTSTAMP:20250906T120000Z
-DTSTART;TZID=Europe/Paris:20250314T080000
-DTEND;TZID=Europe/Paris:20250314T120000
+DTSTART;TZID=Europe/Paris:20260314T080000
+DTEND;TZID=Europe/Paris:20260314T120000
 SUMMARY:DS8 Maths 🧮
 END:VEVENT
 
 BEGIN:VEVENT
-UID:ds-francais-20250321@colles
+UID:ds-francais-20260321@colles
 DTSTAMP:20250906T120000Z
-DTSTART;TZID=Europe/Paris:20250321T080000
-DTEND;TZID=Europe/Paris:20250321T120000
+DTSTART;TZID=Europe/Paris:20260321T080000
+DTEND;TZID=Europe/Paris:20260321T120000
 SUMMARY:DS Français 🇫🇷
 END:VEVENT
 
 BEGIN:VEVENT
-UID:ds9-maths-20250403@colles
+UID:ds9-maths-20260403@colles
 DTSTAMP:20250906T120000Z
-DTSTART;TZID=Europe/Paris:20250403T160000
-DTEND;TZID=Europe/Paris:20250403T190000
+DTSTART;TZID=Europe/Paris:20260403T160000
+DTEND;TZID=Europe/Paris:20260403T190000
 SUMMARY:DS9 Maths 🧮
 END:VEVENT
+
+BEGIN:VEVENT
+UID:tipe-1@colles
+DTSTAMP:20250918T120000Z
+DTSTART;TZID=Europe/Paris:20260115T090000
+DTEND;TZID=Europe/Paris:20260115T100000
+SUMMARY:🧲 Ouverture Étape 1 : TITRE et MCOT - TIPE
+DESCRIPTION:ÉTAPE 1 : TITRE et MCOT\nDu jeudi 15 Janvier 20261 à 9h au jeudi 5 Février 2026 à 14h
+ \nSaisie du Titre\nDéclaration du professeur encadrant\nSaisie des motivations pour le
+ choix du sujet\nSaisie de l’ancrage du sujet au thème de l’année\nSaisie en ligne de la
+ MCOT (Mise en Cohérence des Objectifs du TIPE)\nEn cas de travail en groupe, déclaration
+ des différents membres via leur numéro d’identification de candidat
+END:VEVENT
+
+BEGIN:VEVENT
+UID:tipe-2@colles
+DTSTAMP:20250918T120000Z
+DTSTART;TZID=Europe/Paris:20260205T130000
+DTEND;TZID=Europe/Paris:20260205T140000
+SUMMARY:🧲 Fermeture à 14h Étape 1 : TITRE et MCOT - TIPE
+DESCRIPTION:ÉTAPE 1 : TITRE et MCOT\nDu jeudi 15 Janvier 20261 à 9h au jeudi 5 Février 2026 à 14h
+ \nSaisie du Titre\nDéclaration du professeur encadrant\nSaisie des motivations pour le
+ choix du sujet\nSaisie de l’ancrage du sujet au thème de l’année\nSaisie en ligne de la
+ MCOT (Mise en Cohérence des Objectifs du TIPE)\nEn cas de travail en groupe, déclaration
+ des différents membres via leur numéro d’identification de candidat
+END:VEVENT
+
+BEGIN:VEVENT
+UID:tipe-3@colles
+DTSTAMP:20250918T120000Z
+DTSTART;TZID=Europe/Paris:20260225T090000
+DTEND;TZID=Europe/Paris:20260225T100000
+SUMMARY:🧲 Ouverture Étape 2 : Ouverture PRÉSENTATION - TIPE
+DESCRIPTION:ÉTAPE 2 : PRÉSENTATION\nDu mercredi 25 Février 2026 à 9h au mardi 9 juin 20261 à 14h
+ \nTéléversement du support de la Présentation orale\nSaisie en ligne du DOT (Déroulé
+ Opérationnel du TIPE)\nAjustements éventuels des positionnements thématiques et mots-
+ clés Enregistrements éventuels lors de changement des groupes\nAjustements éventuels des
+ références bibliographiques complémentaires
+END:VEVENT
+
+BEGIN:VEVENT
+UID:tipe-4@colles
+DTSTAMP:20250918T120000Z
+DTSTART;TZID=Europe/Paris:20260609T130000
+DTEND;TZID=Europe/Paris:20260609T140000
+SUMMARY:🧲 Fermeture à 14h Étape 2 : PRÉSENTATION - TIPE
+DESCRIPTION:ÉTAPE 2 : PRÉSENTATION\nDu mercredi 25 Février 2026 à 9h au mardi 9 juin 20261 à 14h
+ \nTéléversement du support de la Présentation orale\nSaisie en ligne du DOT (Déroulé
+ Opérationnel du TIPE)\nAjustements éventuels des positionnements thématiques et mots-
+ clés Enregistrements éventuels lors de changement des groupes\nAjustements éventuels des
+ références bibliographiques complémentaires
+END:VEVENT
+
+BEGIN:VEVENT
+UID:tipe-5@colles
+DTSTAMP:20250918T120000Z
+DTSTART;TZID=Europe/Paris:20260611T090000
+DTEND;TZID=Europe/Paris:20260611T100000
+SUMMARY:🧲 Ouverture Étape 3 : VALIDATION - TIPE
+DESCRIPTION:ÉTAPE 3 : VALIDATION\nDu jeudi 11 juin 20261 à 9h au vendredi 19 juin 2026 à 14h
+ \nValidation des Livrables par le professeur encadrant du TIPE
+END:VEVENT
+
+BEGIN:VEVENT
+UID:tipe-6@colles
+DTSTAMP:20250918T120000Z
+DTSTART;TZID=Europe/Paris:20260619T130000
+DTEND;TZID=Europe/Paris:20260619T140000
+SUMMARY:🧲 Fermeture à 14h Étape 3 : VALIDATION - TIPE
+DESCRIPTION:ÉTAPE 3 : VALIDATION\nDu jeudi 11 juin 20261 à 9h au vendredi 19 juin 2026 à 14h
+ \nValidation des Livrables par le professeur encadrant du TIPE
+END:VEVENT
+
 
 END:VCALENDAR
