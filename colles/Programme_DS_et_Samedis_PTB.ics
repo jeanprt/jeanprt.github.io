@@ -2,6 +2,10 @@ BEGIN:VCALENDAR
 VERSION:2.0
 CALSCALE:GREGORIAN
 PRODID:-//DS et Samedis PT B//jeanprt.github.io//FR
+X-WR-CALNAME:Calendrier des DS et Samedis PTB 2025
+X-WR-CALDESC:Calendrier des DS et Samedis PTB 2025
+X-WR-TIMEZONE:Europe/Paris
+
 
 BEGIN:VEVENT
 UID:ds1-sii-20250901@colles
