@@ -1,6 +1,6 @@
 # jeanprt.github.io
 
-Bonjour à tous, sur cet espace vous trouverez un protfolio de présentation ainsi que plusieurs de mes projets.
+Bonjour à tous, sur cet espace vous trouverez un portfolio de présentation ainsi que plusieurs de mes projets.
 
 Bonne lecture,
 Jean
