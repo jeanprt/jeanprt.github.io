@@ -368,4 +368,103 @@ UID:ce33fa9e-8ba6-48a6-ae7d-cb2304452c8b@colles
 LOCATION:www.banquept.fr
 DESCRIPTION:🎓 Résultats des admissibilités des concours de la Banque PT
 END:VEVENT
+BEGIN:VEVENT
+SUMMARY:🎓 1re Proposition d’intégration - Consultation
+DTSTART;TZID=Europe/Paris:20260728T140000
+DTEND;TZID=Europe/Paris:20260728T150000
+DTSTAMP:20260425T193000Z
+UID:ce33fa9e-8ba6-48a6-ae7d-cb06629e2c8c@scei
+DESCRIPTION:Consultation de la 1re proposition d’intégration sur www.scei-concours.fr\nRéponse obligatoire avant le 30/07 à 12h.
+ALARM;TRIGGER:-PT1H;ACTION:DISPLAY:Notification : Réponse obligatoire avant 12h demain !
+END:VEVENT
+
+BEGIN:VEVENT
+SUMMARY:⏰ 1re Proposition d’intégration - Clôture
+DTSTART;TZID=Europe/Paris:20260730T110000
+DTEND;TZID=Europe/Paris:20260730T120000
+DTSTAMP:20260425T193000Z
+UID:ce33fa9e-8ba6-48a6-ae7d-cb06629e2c8d@scei
+DESCRIPTION:Clôture de la réponse à la 1re proposition d’intégration sur www.scei-concours.fr\nDernière heure pour répondre !
+ALARM;TRIGGER:-PT1H;ACTION:DISPLAY:Attention : Clôture dans 1h !
+END:VEVENT
+
+BEGIN:VEVENT
+SUMMARY:🎓 2ème Proposition d’intégration - Consultation
+DTSTART;TZID=Europe/Paris:20260731T140000
+DTEND;TZID=Europe/Paris:20260731T150000
+DTSTAMP:20260425T193000Z
+UID:ce33fa9e-8ba6-48a6-ae7d-cb06629e2c8e@scei
+DESCRIPTION:Consultation de la 2ème proposition d’intégration sur www.scei-concours.fr\nRéponse obligatoire avant le 02/08 à 14h.
+ALARM;TRIGGER:-PT1H;ACTION:DISPLAY:Notification : Réponse obligatoire avant 14h le 02/08 !
+END:VEVENT
+
+BEGIN:VEVENT
+SUMMARY:⏰ 2ème Proposition d’intégration - Clôture
+DTSTART;TZID=Europe/Paris:20260802T130000
+DTEND;TZID=Europe/Paris:20260802T140000
+DTSTAMP:20260425T193000Z
+UID:ce33fa9e-8ba6-48a6-ae7d-cb06629e2c8f@scei
+DESCRIPTION:Clôture de la réponse à la 2ème proposition d’intégration sur www.scei-concours.fr\nDernière heure pour répondre !
+ALARM;TRIGGER:-PT1H;ACTION:DISPLAY:Attention : Clôture dans 1h !
+END:VEVENT
+
+BEGIN:VEVENT
+SUMMARY:🎓 3ème Proposition d’intégration - Consultation (25/08)
+DTSTART;TZID=Europe/Paris:20260825T140000
+DTEND;TZID=Europe/Paris:20260825T150000
+DTSTAMP:20260425T193000Z
+UID:ce33fa9e-8ba6-48a6-ae7d-cb06629e2c8g@scei
+DESCRIPTION:Consultation de la proposition d’intégration sur www.scei-concours.fr\nRéponse obligatoire avant le 27/08 à 14h.
+ALARM;TRIGGER:-PT1H;ACTION:DISPLAY:Notification : Réponse obligatoire avant 14h le 27/08 !
+END:VEVENT
+
+BEGIN:VEVENT
+SUMMARY:⏰ 3ème Proposition d’intégration - Clôture (25/08)
+DTSTART;TZID=Europe/Paris:20260827T130000
+DTEND;TZID=Europe/Paris:20260827T140000
+DTSTAMP:20260425T193000Z
+UID:ce33fa9e-8ba6-48a6-ae7d-cb06629e2c8h@scei
+DESCRIPTION:Clôture de la réponse à la proposition d’intégration sur www.scei-concours.fr\nDernière heure pour répondre !
+ALARM;TRIGGER:-PT1H;ACTION:DISPLAY:Attention : Clôture dans 1h !
+END:VEVENT
+
+BEGIN:VEVENT
+SUMMARY:🎓 4ème Proposition d’intégration - Consultation (01/09)
+DTSTART;TZID=Europe/Paris:20260901T140000
+DTEND;TZID=Europe/Paris:20260901T150000
+DTSTAMP:20260425T193000Z
+UID:ce33fa9e-8ba6-48a6-ae7d-cb06629e2c8i@scei
+DESCRIPTION:Consultation de la proposition d’intégration sur www.scei-concours.fr\nRéponse obligatoire avant le 03/09 à 12h.
+ALARM;TRIGGER:-PT1H;ACTION:DISPLAY:Notification : Réponse obligatoire avant 12h le 03/09 !
+END:VEVENT
+
+BEGIN:VEVENT
+SUMMARY:⏰ 4ème Proposition d’intégration - Clôture (01/09)
+DTSTART;TZID=Europe/Paris:20260903T110000
+DTEND;TZID=Europe/Paris:20260903T120000
+DTSTAMP:20260425T193000Z
+UID:ce33fa9e-8ba6-48a6-ae7d-cb06629e2c8j@scei
+DESCRIPTION:Clôture de la réponse à la proposition d’intégration sur www.scei-concours.fr\nDernière heure pour répondre !
+ALARM;TRIGGER:-PT1H;ACTION:DISPLAY:Attention : Clôture dans 1h !
+END:VEVENT
+
+BEGIN:VEVENT
+SUMMARY:🎓 5ème Proposition d’intégration - Consultation (04/09)
+DTSTART;TZID=Europe/Paris:20260904T140000
+DTEND;TZID=Europe/Paris:20260904T150000
+DTSTAMP:20260425T193000Z
+UID:ce33fa9e-8ba6-48a6-ae7d-cb06629e2c8k@scei
+DESCRIPTION:Consultation de la proposition d’intégration sur www.scei-concours.fr\nRéponse obligatoire avant le 06/09 à 14h.
+ALARM;TRIGGER:-PT1H;ACTION:DISPLAY:Notification : Réponse obligatoire avant 14h le 06/09 !
+END:VEVENT
+
+BEGIN:VEVENT
+SUMMARY:⏰ 5ème Proposition d’intégration - Clôture (04/09)
+DTSTART;TZID=Europe/Paris:20260906T130000
+DTEND;TZID=Europe/Paris:20260906T140000
+DTSTAMP:20260425T193000Z
+UID:ce33fa9e-8ba6-48a6-ae7d-cb06629e2c8l@scei
+DESCRIPTION:Clôture de la réponse à la proposition d’intégration sur www.scei-concours.fr\nDernière heure pour répondre !
+ALARM;TRIGGER:-PT1H;ACTION:DISPLAY:Attention : Clôture dans 1h !
+END:VEVENT
 END:VCALENDAR
