@@ -359,4 +359,13 @@ DESCRIPTION:ÉTAPE 3 : VALIDATION\nDu jeudi 11 juin 20261 à 9h au vendred
  i 19 juin 2026 à 14h\nValidation des Livrables par le professeur encadran
  t du TIPE
 END:VEVENT
+BEGIN:VEVENT
+SUMMARY:🎓 Résultats d'admissibilité
+DTSTART;TZID=Europe/Paris:20260606T180000
+DTEND;TZID=Europe/Paris:20260606T190000
+DTSTAMP:20260425T192442Z
+UID:ce33fa9e-8ba6-48a6-ae7d-cb2304452c8b@colles
+LOCATION:www.banquept.fr
+DESCRIPTION:🎓 Résultats des admissibilités des concours de la Banque PT
+END:VEVENT
 END:VCALENDAR
